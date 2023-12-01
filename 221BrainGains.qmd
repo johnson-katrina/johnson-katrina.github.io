@@ -1,0 +1,11 @@
+---
+title: "221 Compuation Practice"
+---
+
+# Math 221 "Daily" Computation Practice
+
+Research shows that Retrievel Practice and Interleaved Practice are beneficial to building knowledge. Here is a collection of cumulative review sets for practicing some of the computations and skills I have noticed many Math 221 students could benefit from additional regular practice.
+
+[Week 1 -- Set 1](Day1.html)
+
+Week 1 - Set 2

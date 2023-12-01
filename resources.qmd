@@ -1,0 +1,37 @@
+---
+title: "Resources"
+---
+
+# My Favorite Resources
+
+-   Current Courses (Winter 2024)
+
+    -   \[Math 119\]()
+
+    -   \[Math 112\]()
+
+    -   \[Math 221A\]()
+
+-   Class Notes
+
+    -   [112 Wiki](https://byuimath.com/johnsonkat/all/112/index.php?n=Schedule.Schedule)
+
+    -   [119 Wiki](https://byuimath.com/johnsonkat/all/119/index.php?n=Schedule.Schedule)
+
+        -   [Ben's 119 Wiki](https://byuimath.com/bmw/all/119/index.php?n=Schedule.Schedule)
+
+    -   [221 "Daily" Computation Practice](221BrainGains.html)
+
+        -   [221 Wiki](https://byuimath.com/johnsonkat/all/221/index.php?n=Schedule.Schedule)
+
+    -   [301 Wiki](https://byuimath.com/johnsonkat/all/301/index.php?n=Main.HomePage)
+
+        -   Ben's 301 Wiki
+
+-   Statistics
+
+    -   [BYU-Idaho's Normal Probability Applet](https://byuimath.com/apps/normprob.html)
+
+    -   [BYU-Idaho's Students's t Probability Applet](https://byuimath.com/apps/normprobwitht.html)
+
+    -   [BYU-Idaho's Math 221 Textbook](https://byuistats.github.io/BYUI_M221_Book/)

@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "Day1.html",
+    "href": "Day1.html",
+    "title": "Practice Day",
+    "section": "",
+    "text": "Day 2\n\n\n\nProblem 1:\n\n\nThe length of human pregnancies from conception to birth is normally distributed with mean 266 days and a standard deviation of 16 days. Find the 80th percentile.  \n\n\nPossible Solution\n\n$= 266 $\n$= 16 $\nNormal Probability Applet Information\nTo find the z-score corresponding to the 80th percentile. 1. Select all the area to the left. 2. Type 0.8 in the Area box. 3. Read the z-score from the right box.\n\nWith 80% of the area to the left, the z-score is 0.842.\n\\(z = 0.842\\)\n\\(` \\begin{aligned} x &= \\mu + z\\sigma \\\\  &= 266 + 0.842(16) \\\\  &= 279.472 \\end{aligned} `\\)\nThe 80th percentile is 279.5 days (\\(x = 279.5\\)).\n\n\n\n\n\nProblem 2:\n\n\nThe Law School Admission Test (LSAT) is required for admission to many law schools. The scores on the LSAT are approximately normal with mean of 150 and standard deviation of 9. Queen’s School of Business in Kingston, Ontario requires a minimum LSAT score of 157 for admission. What is the probability that a randomly selected student will score below 157?  \n\n\nPossible Solution\n\n$= 150 $\n$= 9 $\n\\(x = 157\\)\n\\(z = \\frac{x - \\mu}{\\sigma} = \\frac{157 - 150}{9} = 0.\\overline{7}\\)\n\\(P(X &lt; 157) = P(Z &lt; 0.\\overline{7}) = 0.7817\\)\nNormal Probability Applet Information\nTo find the probability corresponding to a z-score. 1. Shade the side of interest. 2. Type the z-score in the box (negative value the left box and positive values the right box). 3. Read the probability from the area box.\n\n=NORM.DIST(157,150,9,TRUE)"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -7,10 +14,24 @@
     "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
+    "objectID": "221BrainGains.html",
+    "href": "221BrainGains.html",
+    "title": "221 Compuation Practice",
+    "section": "",
+    "text": "Math 221 “Daily” Computation Practice\nResearch shows that Retrievel Practice and Interleaved Practice are beneficial to building knowledge. Here is a collection of cumulative review sets for practicing some of the computations and skills I have noticed many Math 221 students could benefit from additional regular practice.\nWeek 1 – Set 1\nWeek 1 - Set 2"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Dr. Katrina Johnson",
     "section": "",
     "text": "Welcome!\nThanks for stopping by my internet neighborhood. I’m glad to have you join me. This website is intended as a place to share material for class activities.\n\n\nEducation\nPhD in Applied Mathematics (2018), University of Utah\nMS in Mathematics (2012), University of Utah\nBS in Mathematics/Statistics - Composite Teaching (2007), Utah State University\nBA in Liberal Arts and Sciences (2005), Utah State University\nAAT in Computer Aided Drafting and Design (2005), Utah College of Applied Technology"
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "My Favorite Resources\n\nCurrent Courses (Winter 2024)\n\n[Math 119]()\n[Math 112]()\n[Math 221A]()\n\nClass Notes\n\n112 Wiki\n119 Wiki\n\nBen’s 119 Wiki\n\n221 “Daily” Computation Practice\n\n221 Wiki\n\n301 Wiki\n\nBen’s 301 Wiki\n\n\nStatistics\n\nBYU-Idaho’s Normal Probability Applet\nBYU-Idaho’s Students’s t Probability Applet\nBYU-Idaho’s Math 221 Textbook"
   }
 ]
