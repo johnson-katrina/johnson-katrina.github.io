@@ -1,11 +1,19 @@
 ---
-title: "johnson-katrina.github.io"
+title: Dr. Katrina Johnson
 ---
 
-This is a Quarto website.
+# Welcome!
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Thanks for stopping by my internet neighborhood. I'm glad to have you join me. This website is intended as a place to share material for class activities.
 
-```{r}
-1 + 1
-```
+# Education
+
+**PhD in Applied Mathematics** (2018), University of Utah
+
+**MS in Mathematics** (2012), University of Utah
+
+**BS in Mathematics/Statistics - Composite Teaching** (2007), Utah State University
+
+**BA in Liberal Arts and Sciences** (2005), Utah State University
+
+**AAT in Computer Aided Drafting and Design** (2005), Utah College of Applied Technology
