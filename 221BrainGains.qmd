@@ -1,5 +1,6 @@
 ---
 title: "221 Compuation Practice"
+toc: false
 ---
 
 # Math 221 "Daily" Computation Practice
