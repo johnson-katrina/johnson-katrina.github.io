@@ -170,7 +170,7 @@ It might help students make the distinction between percentiles from a distribut
 
     3.  Read the z-score from the right box.
 
-    ![](80th_percentile_fig.png){width="250"}
+    ![](fig_80th_percentile.png)
 
     With 80% of the area to the left, the z-score is 0.842.
 
@@ -206,7 +206,7 @@ It might help students make the distinction between percentiles from a distribut
     2.  Type 0.9 in the Area box.
     3.  Read the z-score from the right box.
 
-    ![](90th_percentile_fig.png)
+    ![](fig_90th_percentile.png)
 
     With 90% of the area to the left, the z-score is 1.282.
 
@@ -244,7 +244,7 @@ It might help students make the distinction between percentiles from a distribut
     2.  Type 0.2 in the Area box.
     3.  Read the z-score from the left box.
 
-    ![](20th_percentile_fig.png)
+    ![](fig_20th_percentile.png)
 
     With 20% of the area to the left, the z-score is -0.842.
 
@@ -282,7 +282,7 @@ It might help students make the distinction between percentiles from a distribut
     2.  Type 0.25 in the Area box.
     3.  Read the z-score from the left box.
 
-    ![](25th_percentile_fig.png)
+    ![](fig_25th_percentile.png)
 
     With 25% of the area to the left, the z-score is -0.674.
 
@@ -322,7 +322,7 @@ It might help students make the distinction between percentiles from a distribut
     2.  Type 0.5 in the Area box.
     3.  Read the z-score from either box (right box or left box, they are the same).\\
 
-    ![](50th_percentile_fig.png)
+    ![](fig_50th_percentile.png)
 
     With 50% of the area to the left, the z-score is 0.
 
@@ -410,31 +410,175 @@ Assign Problem 1-3 on the day of Lesson 5. I think the students should have enou
 
     -   Use the 68-95-99.7 rule to calculate the approximate area from $z = -1$ to $z=0$. *Remember the normal distribution is symmetric.*
 
-        *What does that tell you about the area from* $z = 0$ *to* $z=1$*?*
+        <details>
+
+        <summary>Possible Solution</summary>
+
+        The area within 1 standard deviation of the mean is approximately 0.68.
+
+        ![](fig_approx_1stdev.png)
+
+        The distribution is symmetric so the area from $z=0$ to $z=1$ will be half of 0.68.
+
+        0.68/2 = 0.34
+
+        The area from $z = -1$ to $z=0$ will be approximately 0.34 (or 34% of the total area).
+
+        -   *What does that tell you about the area from* $z = 0$ *to* $z=1$*?*
+
+            <details>
+
+            <summary>Possible Solution</summary>
+
+            Because the distribution is symmetric, it will be the same as the area from $z = -1$ to $z = 0$ (or 34% of the total area).
+
+            </details>
+
+        </details>
 
     -   Use the 68-95-99.7 rule to calculate the approximate below $z=-1$.
 
-        *What does that tell you about the area above* $z = 1$*?*
+        <details>
+
+        <summary>Possible Solution</summary>
+
+        The area within 1 standard deviation of the mean is approximately 0.68.
+
+        ![](fig_approx_1stdev.png)
+
+        The total area is 1, so the area in both tails combine will be 1-0.68 = 0.32.
+
+        Since the distribution is symmetric, the area in the left tail will be half of that, 0.32/2 = 0.16.
+
+        The area below $z = -1$ will be approximately 0.16 (or 16% of the total area).
+
+        -   *What does that tell you about the area above* $z = 1$*?*
+
+            <details>
+
+            <summary>Possible Solution</summary>
+
+            Because the distribution is symmetric, it will be the same as the area below $z = -1$ (or 16% of the total area).
+
+            </details>
+
+        </details>
 
 -   [ ] **Problem:** 68-95-99.7 Rule Problem 2
 
     -   Use the 68-95-99.7 rule to calculate the approximate area from $z = -2$ to $z=0$.
 
-        *What does that tell you about the area from* $z = 0$ *to* $z=2$*?*
+        <details>
+
+        <summary>Possible Solution</summary>
+
+        The area within 2 standard deviation of the mean is approximately 0.95.
+
+        ![](fig_approx_2stdev.png)
+
+        The distribution is symmetric so the area from $z=0$ to $z=2$ will be half of 0.95.
+
+        0.95/2 = 0.475
+
+        The area from $z = -2$ to $z=0$ will be approximately 0.475 (or 47.5% of the total area).
+
+        -   *What does that tell you about the area from* $z = 0$ *to* $z=2$*?*
+
+            <details>
+
+            <summary>Possible Solution</summary>
+
+            Because the distribution is symmetric, it will be the same as the area from $z = -2$ to $z = 0$ (or 47.5% of the total area).
+
+            </details>
+
+        </details>
 
     -   Use the 68-95-99.7 rule to calculate the approximate below $z=-2$.
 
-        *What does that tell you about the area above* $z = 2$*?*
+        <details>
+
+        <summary>Possible Solution</summary>
+
+        The area within 2 standard deviation of the mean is approximately 0.95.
+
+        ![](fig_approx_2stdev.png)
+
+        The total area is 1, so the area in both tails combine will be 1-0.95 = 0.05.
+
+        Since the distribution is symmetric, the area in the left tail will be half of that, 0.05/2 = 0.025.
+
+        The area below $z = -2$ will be approximately 0.025 (or 2.5% of the total area).
+
+        -   *What does that tell you about the area above* $z = 2$*?*
+
+            <details>
+
+            <summary>Possible Solution</summary>
+
+            Because the distribution is symmetric, it will be the same as the area below $z = -2$ (or 2.5% of the total area).
+
+            </details>
+
+        </details>
 
 -   [ ] **Problem:** 68-95-99.7 Rule Problem 3
 
     -   Use the 68-95-99.7 rule to calculate the approximate area from $z = -3$ to $z=0$.
 
-        *What does that tell you about the area from* $z = 0$ *to* $z=3$*?*
+        <details>
+
+        <summary>Possible Solution</summary>
+
+        The area within 3 standard deviation of the mean is approximately 0.997.
+
+        ![](fig_approx_3stdev.png)
+
+        The distribution is symmetric so the area from $z=0$ to $z=3$ will be half of 0.997.
+
+        0.997/2 = 0.4985
+
+        The area from $z = -3$ to $z=0$ will be approximately 0.4985 (or 49.85% of the total area).
+
+        -   *What does that tell you about the area from* $z = 0$ *to* $z=3$*?*
+
+            <details>
+
+            <summary>Possible Solution</summary>
+
+            Because the distribution is symmetric, it will be the same as the area from $z = -3$ to $z = 0$ (or 49.85% of the total area).
+
+            </details>
+
+        </details>
 
     -   Use the 68-95-99.7 rule to calculate the approximate below $z=-3$.
 
-        *What does that tell you about the area above* $z = 3$*?*
+        <details>
+
+        <summary>Possible Solution</summary>
+
+        The area within 3 standard deviation of the mean is approximately 0.997.
+
+        ![](fig_approx_3stdev.png)
+
+        The total area is 1, so the area in both tails combine will be 1-0.997 = 0.003.
+
+        Since the distribution is symmetric, the area in the left tail will be half of that, 0.003/2 = 0.0015.
+
+        The area below $z = -3$ will be approximately 0.0015 (or 0.15% of the total area).
+
+        -   *What does that tell you about the area above* $z = 3$*?*
+
+            <details>
+
+            <summary>Possible Solution</summary>
+
+            Because the distribution is symmetric, it will be the same as the area below $z = -3$ (or 0.15% of the total area).
+
+            </details>
+
+        </details>
 
 -   [ ] **Problem:** 68-95-99.7 Rule Problem 4
 
@@ -446,7 +590,7 @@ Assign Problem 1-3 on the day of Lesson 5. I think the students should have enou
 
         The area within 2 standard deviation of the mean is approximately 0.95.
 
-        ![](approx_2stdev_fig.png)
+        ![](fig_approx_2stdev.png)
 
         The remaining area is approximately 1-0.95 = 0.05.
 
@@ -464,7 +608,7 @@ Assign Problem 1-3 on the day of Lesson 5. I think the students should have enou
 
         The area within 1 standard deviation of the mean is approximately 0.68.
 
-        ![](approx_1stdev_fig.png)
+        ![](fig_approx_1stdev.png)
 
         The remaining area is approximately 1-0.68 = 0.32.
 
@@ -484,19 +628,19 @@ Assign Problem 1-3 on the day of Lesson 5. I think the students should have enou
 
         The area we want to find is shown below.
 
-        ![](approx_neg2to1_fig.png)
+        ![](fig_approx_neg2to1.png)
 
         If you subtract the area to the left of $z = -2$ from the area to the left of $z = 1$ you will be left with the area between $z = -2$ and $z = 1$.
 
-        ![](approx_neg2to1_equation_fig.png)
+        ![](fig_approx_neg2to1_equation.png)
 
-        The area to the left of $z = -2$ is 0.025 (Recall the calculation $\frac{1 - 0.9 5}{2} = 0.025$ from part \[a\] above).
+        The area to the left of $z = -2$ is 0.025 (Recall the calculation $\frac{1 - 0.9 5}{2} = 0.025$ from "part a" above).
 
-        The area to the left of $z = 1$ is 0.84 (Recall the calculation $\frac{1-0.68}{2} + 0.68 = 0.84$ from part \[b\] above).
+        The area to the left of $z = 1$ is 0.84 (Recall the calculation $\frac{1-0.68}{2} + 0.68 = 0.84$ from "part b" above).
 
         Taking away the area to the left of $z = -2$ from the area to the left of $z = 1$ we have $0.84 - 0.025 = 0.815$.
 
-        The area area between $z = -2$ and $z = 1$ is 0.815 (or 81.5% of the total area).
+        The area between $z = -2$ and $z = 1$ is 0.815 (or 81.5% of the total area).
 
         </details>
 
@@ -514,19 +658,19 @@ Assign Problem 1-3 on the day of Lesson 5. I think the students should have enou
 
     The area we are interested in is shown below.
 
-    ![](approx_2to3_fig.png)
+    ![](fig_approx_2to3.png)
 
     The area within 3 standard deviation of the mean is approximately 0.997.
 
-    ![](approx_3stdev_fig.png)
+    ![](fig_approx_3stdev.png)
 
     The area within 2 standard deviation of the mean is approximately 0.95.
 
-    ![](approx_2stdev_fig.png)
+    ![](fig_approx_2stdev.png)
 
     If we remove (subtract) the area between $z = -2$ and $z=2$ from the area between $z = -3$ and $z=3$, we will be left with the areas between $z=-3$ and $z=-2$ and between $z=2$ and $z=3$.
 
-    ![](approx_2to3_equation_fig.png)
+    ![](fig_approx_2to3_equation.png)
 
     0.997 - 0.95 = 0.047
 
@@ -534,7 +678,7 @@ Assign Problem 1-3 on the day of Lesson 5. I think the students should have enou
 
     0.047/2 = 0.0235
 
-    The area between $z = 2$ and $z = 3$ is 0.024 (or 2.4% of the total area).
+    The area between $z = 2$ and $z = 3$ is 0.0235 (or 2.35% of the total area).
 
     </details>
 
@@ -555,6 +699,104 @@ Assign Problem 1-3 on the day of Lesson 5. I think the students should have enou
 ## Probability Calculations with Normal Distribution
 
 -   [ ] **Problem:** Pregnancy
+
+    The length of human pregnancies from conception to birth is normally distributed with mean 266 days and a standard deviation of 16 days.
+
+    -   What is the probability a pregnancy lasts less than 242 days?
+
+        <details>
+
+        <summary>Possible Solution</summary>
+
+        $\mu = 266$
+
+        $\sigma = 16$
+
+        $x = 242$
+
+        $z = \frac{x - \mu}{\sigma} = \frac{242 - 266}{16} = -1.5$
+
+        **Normal Probability Applet Information**
+
+        To find the probability corresponding to a z-score.
+
+        1.  Shade the area(s) of interest.
+        2.  Type the z-score in the box (negative value the left box and positive values the right box).
+        3.  Read the probability from the area box.
+
+        ![](fig_pregnancy_less242.png)
+
+        $P(X < 242) = P(Z < -1.5) = 0.0668$
+
+        ``` Excel
+        =NORM.DIST(242,266,16,TRUE)
+        ```
+
+        The probability that a pregnancy lasts less than 242 days is 0.067.
+
+        </details>
+
+    -   What is the probability a pregnancy lasts less than 278 days?
+
+        <details>
+
+        <summary>Possible Solution</summary>
+
+        $\mu = 266$
+
+        $\sigma = 16$
+
+        $x = 278$
+
+        $z = \frac{x - \mu}{\sigma} = \frac{278 - 266}{16} = 0.75$
+
+        **Normal Probability Applet Information**
+
+        To find the probability corresponding to a z-score.
+
+        1.  Shade the area(s) of interest.
+        2.  Type the z-score in the box (negative value the left box and positive values the right box).
+        3.  Read the probability from the area box.
+
+        ![](fig_pregnancy_less278.png)
+
+        ``` Excel
+        =NORM.DIST(278,266,16,TRUE)
+        ```
+
+        $P(X < 278) = P(Z < 0.75) = 0.7734$
+
+        The probability that a pregnancy lasts less than 278 days is 0.773.
+
+        </details>
+
+    -   What is the probability a pregnancy lasts between 242 and 278 days?
+
+        <details>
+
+        <summary>Possible Solution</summary>
+
+        We are looking for the area between $z = -1.5$ and $z = 0.75$, shown below.
+
+        ![](fig_pregnancy_between242and278.png)
+
+        We can find this area by taking away the area to the left of $z=-1.5$ from the area to the left of $0.75$.
+
+        ![](fig_pregnancy_between242and278_equation.png)
+
+        $P(242 < X < 278) = P(-1.5 < Z < 0.75) = 0.7734 - 0.0668 = 0.7066$
+
+        ``` Excel
+        =NORM.DIST(278,266,16,TRUE) - NORM.DIST(242,266,16,TRUE)
+        ```
+
+        The probability that a pregnancy lasts between 242 and 278 days is 0.707.
+
+        </details>
+
+    <!--- Adapted from my 221 Wiki April 30, 2021 (Ben's exercises) --->
+
+    <!--- Winter 2023 Computation Practice #7 --->
 
 -   [ ] **Problem:** LSAT
 
@@ -580,7 +822,7 @@ Assign Problem 1-3 on the day of Lesson 5. I think the students should have enou
     2.  Type the z-score in the box (negative value the left box and positive values the right box).
     3.  Read the probability from the area box.
 
-    ![](LSAT_fig.png)
+    ![](fig_LSAT.png)
 
     ```         
     =NORM.DIST(157,150,9,TRUE)

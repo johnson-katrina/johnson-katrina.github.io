@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Katrina Johnson - Question List</title>
+<title>K Johnson - Question List</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Katrina Johnson</span>
+    <span class="navbar-title">K Johnson</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -294,7 +294,7 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Type 0.8 in the Area box.</p></li>
 <li><p>Read the z-score from the right box.</p></li>
 </ol>
-<p><img src="80th_percentile_fig.png" class="img-fluid" width="250"></p>
+<p><img src="fig_80th_percentile.png" class="img-fluid"></p>
 <p>With 80% of the area to the left, the z-score is 0.842.</p>
 <p><span class="math inline">\(z = 0.842\)</span></p>
 <p><span class="math inline">\(\begin{aligned} x &amp;= \mu + z\sigma \\ &amp;= 266 + 0.842(16) \\ &amp;= 279.472 \end{aligned}\)</span></p>
@@ -317,7 +317,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Type 0.9 in the Area box.</li>
 <li>Read the z-score from the right box.</li>
 </ol>
-<p><img src="90th_percentile_fig.png" class="img-fluid"></p>
+<p><img src="fig_90th_percentile.png" class="img-fluid"></p>
 <p>With 90% of the area to the left, the z-score is 1.282.</p>
 <p><span class="math inline">\(z = 1.282\)</span></p>
 <p><span class="math inline">\(\begin{align*} x &amp;= \mu + z\sigma \\ &amp;= 266 + 1.282(16) \\ &amp;= 286.512\end{align*}\)</span></p>
@@ -340,7 +340,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Type 0.2 in the Area box.</li>
 <li>Read the z-score from the left box.</li>
 </ol>
-<p><img src="20th_percentile_fig.png" class="img-fluid"></p>
+<p><img src="fig_20th_percentile.png" class="img-fluid"></p>
 <p>With 20% of the area to the left, the z-score is -0.842.</p>
 <pre class="excel"><code>=NORM.S.INV(0.2)</code></pre>
 <p><span class="math inline">\(z = -0.842\)</span></p>
@@ -363,7 +363,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Type 0.25 in the Area box.</li>
 <li>Read the z-score from the left box.</li>
 </ol>
-<p><img src="25th_percentile_fig.png" class="img-fluid"></p>
+<p><img src="fig_25th_percentile.png" class="img-fluid"></p>
 <p>With 25% of the area to the left, the z-score is -0.674.</p>
 <p><span class="math inline">\(z = -0.674\)</span></p>
 <p><span class="math inline">\(\begin{align*} x &amp;= \mu + z\sigma \\ &amp;= 266 + (-0.674)16 \\ &amp;= 255.216\end{align*}\)</span></p>
@@ -387,7 +387,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Type 0.5 in the Area box.</li>
 <li>Read the z-score from either box (right box or left box, they are the same).\</li>
 </ol>
-<p><img src="50th_percentile_fig.png" class="img-fluid"></p>
+<p><img src="fig_50th_percentile.png" class="img-fluid"></p>
 <p>With 50% of the area to the left, the z-score is 0.</p>
 <pre class="excel"><code>=NORM.S.INV(0.5)</code></pre>
 <p><span class="math inline">\(z = 0\)</span></p>
@@ -444,23 +444,131 @@ ul.task-list li input[type="checkbox"] {
 <li><p><input type="checkbox"><strong>Problem:</strong> 68-95-99.7 Rule Problem 1</p>
 <ul>
 <li><p>Use the 68-95-99.7 rule to calculate the approximate area from <span class="math inline">\(z = -1\)</span> to <span class="math inline">\(z=0\)</span>. <em>Remember the normal distribution is symmetric.</em></p>
-<p><em>What does that tell you about the area from</em> <span class="math inline">\(z = 0\)</span> <em>to</em> <span class="math inline">\(z=1\)</span><em>?</em></p></li>
+<details>
+<summary>
+<p>Possible Solution</p>
+</summary>
+<p>The area within 1 standard deviation of the mean is approximately 0.68.</p>
+<p><img src="fig_approx_1stdev.png" class="img-fluid"></p>
+<p>The distribution is symmetric so the area from <span class="math inline">\(z=0\)</span> to <span class="math inline">\(z=1\)</span> will be half of 0.68.</p>
+<p>0.68/2 = 0.34</p>
+<p>The area from <span class="math inline">\(z = -1\)</span> to <span class="math inline">\(z=0\)</span> will be approximately 0.34 (or 34% of the total area).</p>
+<ul>
+<li><p><em>What does that tell you about the area from</em> <span class="math inline">\(z = 0\)</span> <em>to</em> <span class="math inline">\(z=1\)</span><em>?</em></p>
+<details>
+<summary>
+<p>Possible Solution</p>
+</summary>
+<p>Because the distribution is symmetric, it will be the same as the area from <span class="math inline">\(z = -1\)</span> to <span class="math inline">\(z = 0\)</span> (or 34% of the total area).</p>
+</details></li>
+</ul>
+</details></li>
 <li><p>Use the 68-95-99.7 rule to calculate the approximate below <span class="math inline">\(z=-1\)</span>.</p>
-<p><em>What does that tell you about the area above</em> <span class="math inline">\(z = 1\)</span><em>?</em></p></li>
+<details>
+<summary>
+<p>Possible Solution</p>
+</summary>
+<p>The area within 1 standard deviation of the mean is approximately 0.68.</p>
+<p><img src="fig_approx_1stdev.png" class="img-fluid"></p>
+<p>The total area is 1, so the area in both tails combine will be 1-0.68 = 0.32.</p>
+<p>Since the distribution is symmetric, the area in the left tail will be half of that, 0.32/2 = 0.16.</p>
+<p>The area below <span class="math inline">\(z = -1\)</span> will be approximately 0.16 (or 16% of the total area).</p>
+<ul>
+<li><p><em>What does that tell you about the area above</em> <span class="math inline">\(z = 1\)</span><em>?</em></p>
+<details>
+<summary>
+<p>Possible Solution</p>
+</summary>
+<p>Because the distribution is symmetric, it will be the same as the area below <span class="math inline">\(z = -1\)</span> (or 16% of the total area).</p>
+</details></li>
+</ul>
+</details></li>
 </ul></li>
 <li><p><input type="checkbox"><strong>Problem:</strong> 68-95-99.7 Rule Problem 2</p>
 <ul>
 <li><p>Use the 68-95-99.7 rule to calculate the approximate area from <span class="math inline">\(z = -2\)</span> to <span class="math inline">\(z=0\)</span>.</p>
-<p><em>What does that tell you about the area from</em> <span class="math inline">\(z = 0\)</span> <em>to</em> <span class="math inline">\(z=2\)</span><em>?</em></p></li>
+<details>
+<summary>
+<p>Possible Solution</p>
+</summary>
+<p>The area within 2 standard deviation of the mean is approximately 0.95.</p>
+<p><img src="fig_approx_2stdev.png" class="img-fluid"></p>
+<p>The distribution is symmetric so the area from <span class="math inline">\(z=0\)</span> to <span class="math inline">\(z=2\)</span> will be half of 0.95.</p>
+<p>0.95/2 = 0.475</p>
+<p>The area from <span class="math inline">\(z = -2\)</span> to <span class="math inline">\(z=0\)</span> will be approximately 0.475 (or 47.5% of the total area).</p>
+<ul>
+<li><p><em>What does that tell you about the area from</em> <span class="math inline">\(z = 0\)</span> <em>to</em> <span class="math inline">\(z=2\)</span><em>?</em></p>
+<details>
+<summary>
+<p>Possible Solution</p>
+</summary>
+<p>Because the distribution is symmetric, it will be the same as the area from <span class="math inline">\(z = -2\)</span> to <span class="math inline">\(z = 0\)</span> (or 47.5% of the total area).</p>
+</details></li>
+</ul>
+</details></li>
 <li><p>Use the 68-95-99.7 rule to calculate the approximate below <span class="math inline">\(z=-2\)</span>.</p>
-<p><em>What does that tell you about the area above</em> <span class="math inline">\(z = 2\)</span><em>?</em></p></li>
+<details>
+<summary>
+<p>Possible Solution</p>
+</summary>
+<p>The area within 2 standard deviation of the mean is approximately 0.95.</p>
+<p><img src="fig_approx_2stdev.png" class="img-fluid"></p>
+<p>The total area is 1, so the area in both tails combine will be 1-0.95 = 0.05.</p>
+<p>Since the distribution is symmetric, the area in the left tail will be half of that, 0.05/2 = 0.025.</p>
+<p>The area below <span class="math inline">\(z = -2\)</span> will be approximately 0.025 (or 2.5% of the total area).</p>
+<ul>
+<li><p><em>What does that tell you about the area above</em> <span class="math inline">\(z = 2\)</span><em>?</em></p>
+<details>
+<summary>
+<p>Possible Solution</p>
+</summary>
+<p>Because the distribution is symmetric, it will be the same as the area below <span class="math inline">\(z = -2\)</span> (or 2.5% of the total area).</p>
+</details></li>
+</ul>
+</details></li>
 </ul></li>
 <li><p><input type="checkbox"><strong>Problem:</strong> 68-95-99.7 Rule Problem 3</p>
 <ul>
 <li><p>Use the 68-95-99.7 rule to calculate the approximate area from <span class="math inline">\(z = -3\)</span> to <span class="math inline">\(z=0\)</span>.</p>
-<p><em>What does that tell you about the area from</em> <span class="math inline">\(z = 0\)</span> <em>to</em> <span class="math inline">\(z=3\)</span><em>?</em></p></li>
+<details>
+<summary>
+<p>Possible Solution</p>
+</summary>
+<p>The area within 3 standard deviation of the mean is approximately 0.997.</p>
+<p><img src="fig_approx_3stdev.png" class="img-fluid"></p>
+<p>The distribution is symmetric so the area from <span class="math inline">\(z=0\)</span> to <span class="math inline">\(z=3\)</span> will be half of 0.997.</p>
+<p>0.997/2 = 0.4985</p>
+<p>The area from <span class="math inline">\(z = -3\)</span> to <span class="math inline">\(z=0\)</span> will be approximately 0.4985 (or 49.85% of the total area).</p>
+<ul>
+<li><p><em>What does that tell you about the area from</em> <span class="math inline">\(z = 0\)</span> <em>to</em> <span class="math inline">\(z=3\)</span><em>?</em></p>
+<details>
+<summary>
+<p>Possible Solution</p>
+</summary>
+<p>Because the distribution is symmetric, it will be the same as the area from <span class="math inline">\(z = -3\)</span> to <span class="math inline">\(z = 0\)</span> (or 49.85% of the total area).</p>
+</details></li>
+</ul>
+</details></li>
 <li><p>Use the 68-95-99.7 rule to calculate the approximate below <span class="math inline">\(z=-3\)</span>.</p>
-<p><em>What does that tell you about the area above</em> <span class="math inline">\(z = 3\)</span><em>?</em></p></li>
+<details>
+<summary>
+<p>Possible Solution</p>
+</summary>
+<p>The area within 3 standard deviation of the mean is approximately 0.997.</p>
+<p><img src="fig_approx_3stdev.png" class="img-fluid"></p>
+<p>The total area is 1, so the area in both tails combine will be 1-0.997 = 0.003.</p>
+<p>Since the distribution is symmetric, the area in the left tail will be half of that, 0.003/2 = 0.0015.</p>
+<p>The area below <span class="math inline">\(z = -3\)</span> will be approximately 0.0015 (or 0.15% of the total area).</p>
+<ul>
+<li><p><em>What does that tell you about the area above</em> <span class="math inline">\(z = 3\)</span><em>?</em></p>
+<details>
+<summary>
+<p>Possible Solution</p>
+</summary>
+<p>Because the distribution is symmetric, it will be the same as the area below <span class="math inline">\(z = -3\)</span> (or 0.15% of the total area).</p>
+</details></li>
+</ul>
+</details></li>
 </ul></li>
 <li><p><input type="checkbox"><strong>Problem:</strong> 68-95-99.7 Rule Problem 4</p>
 <ul>
@@ -470,7 +578,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Possible Solution</p>
 </summary>
 <p>The area within 2 standard deviation of the mean is approximately 0.95.</p>
-<p><img src="approx_2stdev_fig.png" class="img-fluid"></p>
+<p><img src="fig_approx_2stdev.png" class="img-fluid"></p>
 <p>The remaining area is approximately 1-0.95 = 0.05.</p>
 <p>Since the normal distribution is symmetric the area in the left tail (the area less than <span class="math inline">\(z = -2\)</span>) is half that, 0.05/2 = 0.025.</p>
 <p>The area less than <span class="math inline">\(z = -2\)</span> is approximately 0.025 (or 2.5% of the total area).</p>
@@ -481,7 +589,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Possible Solution</p>
 </summary>
 <p>The area within 1 standard deviation of the mean is approximately 0.68.</p>
-<p><img src="approx_1stdev_fig.png" class="img-fluid"></p>
+<p><img src="fig_approx_1stdev.png" class="img-fluid"></p>
 <p>The remaining area is approximately 1-0.68 = 0.32.</p>
 <p>Since the distribution is symmetric the area in the left tail (the area less than <span class="math inline">\(z = -1\)</span>) is half that, 0.32/2 = 0.16.</p>
 <p>The area less than <span class="math inline">\(z = 1\)</span> is the sum of the area to the left of <span class="math inline">\(z = -1\)</span> and the area between -1 and 1. We compute 0.16 + 0.68 = 0.84.</p>
@@ -493,13 +601,13 @@ ul.task-list li input[type="checkbox"] {
 <p>Possible Solution</p>
 </summary>
 <p>The area we want to find is shown below.</p>
-<p><img src="approx_neg2to1_fig.png" class="img-fluid"></p>
+<p><img src="fig_approx_neg2to1.png" class="img-fluid"></p>
 <p>If you subtract the area to the left of <span class="math inline">\(z = -2\)</span> from the area to the left of <span class="math inline">\(z = 1\)</span> you will be left with the area between <span class="math inline">\(z = -2\)</span> and <span class="math inline">\(z = 1\)</span>.</p>
-<p><img src="approx_neg2to1_equation_fig.png" class="img-fluid"></p>
-<p>The area to the left of <span class="math inline">\(z = -2\)</span> is 0.025 (Recall the calculation <span class="math inline">\(\frac{1 - 0.9 5}{2} = 0.025\)</span> from part [a] above).</p>
-<p>The area to the left of <span class="math inline">\(z = 1\)</span> is 0.84 (Recall the calculation <span class="math inline">\(\frac{1-0.68}{2} + 0.68 = 0.84\)</span> from part [b] above).</p>
+<p><img src="fig_approx_neg2to1_equation.png" class="img-fluid"></p>
+<p>The area to the left of <span class="math inline">\(z = -2\)</span> is 0.025 (Recall the calculation <span class="math inline">\(\frac{1 - 0.9 5}{2} = 0.025\)</span> from “part a” above).</p>
+<p>The area to the left of <span class="math inline">\(z = 1\)</span> is 0.84 (Recall the calculation <span class="math inline">\(\frac{1-0.68}{2} + 0.68 = 0.84\)</span> from “part b” above).</p>
 <p>Taking away the area to the left of <span class="math inline">\(z = -2\)</span> from the area to the left of <span class="math inline">\(z = 1\)</span> we have <span class="math inline">\(0.84 - 0.025 = 0.815\)</span>.</p>
-<p>The area area between <span class="math inline">\(z = -2\)</span> and <span class="math inline">\(z = 1\)</span> is 0.815 (or 81.5% of the total area).</p>
+<p>The area between <span class="math inline">\(z = -2\)</span> and <span class="math inline">\(z = 1\)</span> is 0.815 (or 81.5% of the total area).</p>
 </details>
 <p><em>Can you find a group that calculated these areas different from you? What can you learn from that group?</em></p></li>
 </ul>
@@ -511,17 +619,17 @@ ul.task-list li input[type="checkbox"] {
 <p>Possible Solution</p>
 </summary>
 <p>The area we are interested in is shown below.</p>
-<p><img src="approx_2to3_fig.png" class="img-fluid"></p>
+<p><img src="fig_approx_2to3.png" class="img-fluid"></p>
 <p>The area within 3 standard deviation of the mean is approximately 0.997.</p>
-<p><img src="approx_3stdev_fig.png" class="img-fluid"></p>
+<p><img src="fig_approx_3stdev.png" class="img-fluid"></p>
 <p>The area within 2 standard deviation of the mean is approximately 0.95.</p>
-<p><img src="approx_2stdev_fig.png" class="img-fluid"></p>
+<p><img src="fig_approx_2stdev.png" class="img-fluid"></p>
 <p>If we remove (subtract) the area between <span class="math inline">\(z = -2\)</span> and <span class="math inline">\(z=2\)</span> from the area between <span class="math inline">\(z = -3\)</span> and <span class="math inline">\(z=3\)</span>, we will be left with the areas between <span class="math inline">\(z=-3\)</span> and <span class="math inline">\(z=-2\)</span> and between <span class="math inline">\(z=2\)</span> and <span class="math inline">\(z=3\)</span>.</p>
-<p><img src="approx_2to3_equation_fig.png" class="img-fluid"></p>
+<p><img src="fig_approx_2to3_equation.png" class="img-fluid"></p>
 <p>0.997 - 0.95 = 0.047</p>
 <p>Because the distribution is symmetric these two remaining areas will be the same size.</p>
 <p>0.047/2 = 0.0235</p>
-<p>The area between <span class="math inline">\(z = 2\)</span> and <span class="math inline">\(z = 3\)</span> is 0.024 (or 2.4% of the total area).</p>
+<p>The area between <span class="math inline">\(z = 2\)</span> and <span class="math inline">\(z = 3\)</span> is 0.0235 (or 2.35% of the total area).</p>
 </details>
 <p><em>Can you find a group that calculated the area different from you?</em></p>
 <!--- Winter 2023 Computation Practice #6d---></li>
@@ -535,7 +643,67 @@ ul.task-list li input[type="checkbox"] {
 <section id="probability-calculations-with-normal-distribution" class="level2">
 <h2 class="anchored" data-anchor-id="probability-calculations-with-normal-distribution">Probability Calculations with Normal Distribution</h2>
 <ul class="task-list">
-<li><p><input type="checkbox"><strong>Problem:</strong> Pregnancy</p></li>
+<li><p><input type="checkbox"><strong>Problem:</strong> Pregnancy</p>
+<p>The length of human pregnancies from conception to birth is normally distributed with mean 266 days and a standard deviation of 16 days.</p>
+<ul>
+<li><p>What is the probability a pregnancy lasts less than 242 days?</p>
+<details>
+<summary>
+<p>Possible Solution</p>
+</summary>
+<p><span class="math inline">\(\mu = 266\)</span></p>
+<p><span class="math inline">\(\sigma = 16\)</span></p>
+<p><span class="math inline">\(x = 242\)</span></p>
+<p><span class="math inline">\(z = \frac{x - \mu}{\sigma} = \frac{242 - 266}{16} = -1.5\)</span></p>
+<p><strong>Normal Probability Applet Information</strong></p>
+<p>To find the probability corresponding to a z-score.</p>
+<ol type="1">
+<li>Shade the area(s) of interest.</li>
+<li>Type the z-score in the box (negative value the left box and positive values the right box).</li>
+<li>Read the probability from the area box.</li>
+</ol>
+<p><img src="fig_pregnancy_less242.png" class="img-fluid"></p>
+<p><span class="math inline">\(P(X &lt; 242) = P(Z &lt; -1.5) = 0.0668\)</span></p>
+<pre class="excel"><code>=NORM.DIST(242,266,16,TRUE)</code></pre>
+<p>The probability that a pregnancy lasts less than 242 days is 0.067.</p>
+</details></li>
+<li><p>What is the probability a pregnancy lasts less than 278 days?</p>
+<details>
+<summary>
+<p>Possible Solution</p>
+</summary>
+<p><span class="math inline">\(\mu = 266\)</span></p>
+<p><span class="math inline">\(\sigma = 16\)</span></p>
+<p><span class="math inline">\(x = 278\)</span></p>
+<p><span class="math inline">\(z = \frac{x - \mu}{\sigma} = \frac{278 - 266}{16} = 0.75\)</span></p>
+<p><strong>Normal Probability Applet Information</strong></p>
+<p>To find the probability corresponding to a z-score.</p>
+<ol type="1">
+<li>Shade the area(s) of interest.</li>
+<li>Type the z-score in the box (negative value the left box and positive values the right box).</li>
+<li>Read the probability from the area box.</li>
+</ol>
+<p><img src="fig_pregnancy_less278.png" class="img-fluid"></p>
+<pre class="excel"><code>=NORM.DIST(278,266,16,TRUE)</code></pre>
+<p><span class="math inline">\(P(X &lt; 278) = P(Z &lt; 0.75) = 0.7734\)</span></p>
+<p>The probability that a pregnancy lasts less than 278 days is 0.773.</p>
+</details></li>
+<li><p>What is the probability a pregnancy lasts between 242 and 278 days?</p>
+<details>
+<summary>
+<p>Possible Solution</p>
+</summary>
+<p>We are looking for the area between <span class="math inline">\(z = -1.5\)</span> and <span class="math inline">\(z = 0.75\)</span>, shown below.</p>
+<p><img src="fig_pregnancy_between242and278.png" class="img-fluid"></p>
+<p>We can find this area by taking away the area to the left of <span class="math inline">\(z=-1.5\)</span> from the area to the left of <span class="math inline">\(0.75\)</span>.</p>
+<p><img src="fig_pregnancy_between242and278_equation.png" class="img-fluid"></p>
+<p><span class="math inline">\(P(242 &lt; X &lt; 278) = P(-1.5 &lt; Z &lt; 0.75) = 0.7734 - 0.0668 = 0.7066\)</span></p>
+<pre class="excel"><code>=NORM.DIST(278,266,16,TRUE) - NORM.DIST(242,266,16,TRUE)</code></pre>
+<p>The probability that a pregnancy lasts between 242 and 278 days is 0.707.</p>
+</details></li>
+</ul>
+<!--- Adapted from my 221 Wiki April 30, 2021 (Ben's exercises) --->
+<!--- Winter 2023 Computation Practice #7 ---></li>
 <li><p><input type="checkbox"><strong>Problem:</strong> LSAT</p>
 <p>The Law School Admission Test (LSAT) is required for admission to many law schools. The scores on the LSAT are approximately normal with mean of 150 and standard deviation of 9. Queen’s School of Business in Kingston, Ontario requires a minimum LSAT score of 157 for admission. What is the probability that a randomly selected student will score below 157?</p>
 <details>
@@ -553,7 +721,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Type the z-score in the box (negative value the left box and positive values the right box).</li>
 <li>Read the probability from the area box.</li>
 </ol>
-<p><img src="LSAT_fig.png" class="img-fluid"></p>
+<p><img src="fig_LSAT.png" class="img-fluid"></p>
 <pre><code>=NORM.DIST(157,150,9,TRUE)</code></pre>
 <p><span class="math inline">\(P(X &lt; 157) = P(Z &lt; 0.\overline{7}) = 0.7817\)</span></p>
 <p>The probability a randomly selected student will score below 157 is 0.782.</p>
