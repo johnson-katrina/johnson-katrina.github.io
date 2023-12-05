@@ -144,6 +144,158 @@ As the problems are selected the box can be checked and a note can indicate whic
 
 # After Lessons 3 and 4
 
+## Mean and Median
+
+-   [ ] **Problem:** Comparing Mean and Median
+
+    -   Consider the following data set 6, 58, 100.
+
+        -   Calculate the mean.
+
+            <details>
+
+            <summary>Possible Solution</summary>
+
+            $\overline{x} = \frac{6 + 58 + 100}{3} = 54.\overline{6}$
+
+            The mean of the data is $54.\overline{6}$.
+
+            </details>
+
+        -   Calculate the median.
+
+            <details>
+
+            <summary>Possible Solution</summary>
+
+            The data set in order is 6, 58, 100. We see the middle value is 58.
+
+            The median of the data is 58.
+
+            </details>
+
+        -   Suppose the 6 was a typo and was actually supposed to be a 60.
+
+            -   What is the mean of the corrected data? Did the mean increase, decrease, or stay the same when **one** number in the data changed?
+
+                <details>
+
+                <summary>Possible Solution</summary>
+
+                $\overline{x} = \frac{60 + 58 + 100}{3} = 72.\overline{6}$
+
+                The mean of the corrected data is $72.\overline{6}$.
+
+                $72.\overline{6} > 54.\overline{6}$
+
+                The mean increased.
+
+                </details>
+
+            -   What is the median of the correct data? Did the median increase, decrease, or stay the same when **one** number in the data changed?
+
+                <details>
+
+                <summary>Possible Solution</summary>
+
+                The corrected data set in order is 58, 60, 100. We see the middle value is 60. The median of the corrected data is 60.
+
+                60 \> 58
+
+                The median increased.
+
+                </details>
+
+    -   Consider the following data set 6, 87, 100.
+
+        -   Calculate the mean.
+
+            <details>
+
+            <summary>Possible Solution</summary>
+
+            $\overline{x} = \frac{6 + 87 + 100}{3} = 64.\overline{3}$
+
+            The mean of the data is $64.\overline{3}$.
+
+            </details>
+
+        -   Calculate the median.
+
+            <details>
+
+            <summary>Possible Solution</summary>
+
+            The data set in order is 6, 87, 100. We see the middle value is 87.
+
+            The median of the data is 87.
+
+            </details>
+
+        -   Suppose the 6 was a typo and was actually supposed to be a 60.
+
+            -   What is the mean of the corrected data? Did the mean increase, decrease, or stay the same when **one** number in the data changed?
+
+                <details>
+
+                <summary>Possible Solution</summary>
+
+                $\overline{x} = \frac{60 + 87 + 100}{3} = 82.\overline{3}$
+
+                The mean of the corrected data is $82.\overline{3}$.
+
+                $82.\overline{3} > 64.\overline{3}$
+
+                The mean increased.
+
+                </details>
+
+            -   What is the median of the correct data? Did the median increase, decrease, or stay the same when **one** number in the data changed?
+
+                <details>
+
+                <summary>Possible Solution</summary>
+
+                The corrected data set in order is 60, 87, 100. We see the middle value is 87. The median of the corrected data is 87.
+
+                87 = 87
+
+                The median stayed the same.
+
+                </details>
+
+    -   Suppose you have a set of 100 exam grades and the teacher noticed that the a student's grade recorded as a 6 was actually supposed to be a 60.
+
+        -   Would changing the score from 6 to 60 cause the mean of the 100 grades to increase, decrease or stay the same?
+
+            <details>
+
+            <summary>Possible Solution</summary>
+
+            We saw with the toy data sets ({6, 58,100} and {6, 87, 100}) that changing the 6 to a 60 caused the mean to increase. Because 6 increased to 60 this caused the mean to increase.
+
+            Using this observation we see that changing the **one** score from 6 to 60 in the data set of 100 grades will also cause the mean to increase.
+
+            </details>
+
+        -   Would changing the score from 6 to 60 cause the median of the 100 grades to increase, decrease or stay the same?
+
+            <details>
+
+            <summary>Possible Solution</summary>
+
+            We saw with the toy data sets ({6, 58,100} and {6, 87, 100}) that changing the 6 to a 60 had a different effect on the median in each data set. This is because calculating the median requires that we compare the number 6 (or the corrected number 60) to every value in the data set when we order them. So we have to know the other values to know how the median is effected when we change the 6 to a 60.
+
+            Using this observation we see that don't know how the median will change when we change the **one** score from 6 to a 60 in the 100 grades.
+
+            We would have to know the rest of the 100 grades to know how the median would change.
+
+            </details>
+
+    <!--- Adapted from Practice Exam 1 --->
+
+    <!--- Winter 2023 Computation Practice #20 --->
+
 It might help students make the distinction between percentiles from a distribution verses sample percentiles if several problem sets include percentile
 
 ## Percentile with Distribution
@@ -162,17 +314,17 @@ It might help students make the distinction between percentiles from a distribut
 
     **Normal Probability Applet Information**
 
-    To find the z-score corresponding to the 80th percentile.
+    To find the $z$-score corresponding to the 80th percentile.
 
     1.  Select all the area to the left.
 
     2.  Type 0.8 in the Area box.
 
-    3.  Read the z-score from the right box.
+    3.  Read the $z$-score from the right box.
 
     ![](fig_80th_percentile.png)
 
-    With 80% of the area to the left, the z-score is 0.842.
+    With 80% of the area to the left, the $z$-score is 0.842.
 
     $z = 0.842$
 
@@ -200,23 +352,23 @@ It might help students make the distinction between percentiles from a distribut
 
     **Normal Probability Applet Information**
 
-    To find the z-score corresponding to the 90th percentile.
+    To find the $z$-score corresponding to the 90th percentile.
 
     1.  Select all the area to the left.
     2.  Type 0.9 in the Area box.
-    3.  Read the z-score from the right box.
+    3.  Read the $z$-score from the right box.
 
     ![](fig_90th_percentile.png)
 
-    With 90% of the area to the left, the z-score is 1.282.
+    With 90% of the area to the left, the $z$-score is 1.282.
 
     $z = 1.282$
 
-    $\begin{align*} x &= \mu + z\sigma \\  &= 266 + 1.282(16) \\  &= 286.512\end{align*}$
+    $\begin{align*} x &= \mu + z\sigma \\ &= 266 + 1.282(16) \\ &= 286.512\end{align*}$
 
     The 90th percentile is 286.5 days ($x = 286.5$).
 
-    ``` Excel
+    ``` excel
     =NORM.INV(.9,266,16)
     ```
 
@@ -238,23 +390,23 @@ It might help students make the distinction between percentiles from a distribut
 
     **Normal Probability Applet Information**
 
-    To find the z-score corresponding to the 20th percentile.
+    To find the $z$-score corresponding to the 20th percentile.
 
     1.  Select all the area to the left.
     2.  Type 0.2 in the Area box.
-    3.  Read the z-score from the left box.
+    3.  Read the $z$-score from the left box.
 
     ![](fig_20th_percentile.png)
 
-    With 20% of the area to the left, the z-score is -0.842.
+    With 20% of the area to the left, the $z$-score is -0.842.
 
-    ``` Excel
+    ``` excel
     =NORM.S.INV(0.2)
     ```
 
     $z = -0.842$
 
-    $\begin{align*} x &= \mu + z\sigma \\  &= 266 + (-0.842)16 \\  &= 252.528\end{align*}$
+    $\begin{align*} x &= \mu + z\sigma \\ &= 266 + (-0.842)16 \\ &= 252.528\end{align*}$
 
     The 20th percentile is 252.5 days ($x = 252.5$).
 
@@ -276,25 +428,25 @@ It might help students make the distinction between percentiles from a distribut
 
     **Normal Probability Applet Information**
 
-    To find the z-score corresponding to the 25th percentile.
+    To find the $z$-score corresponding to the 25th percentile.
 
     1.  Select all the area to the left.
     2.  Type 0.25 in the Area box.
-    3.  Read the z-score from the left box.
+    3.  Read the $z$-score from the left box.
 
     ![](fig_25th_percentile.png)
 
-    With 25% of the area to the left, the z-score is -0.674.
+    With 25% of the area to the left, the $z$-score is -0.674.
 
     $z = -0.674$
 
-    $\begin{align*} x &= \mu + z\sigma \\  &= 266 + (-0.674)16 \\  &= 255.216\end{align*}$
+    $\begin{align*} x &= \mu + z\sigma \\ &= 266 + (-0.674)16 \\ &= 255.216\end{align*}$
 
     The 25th percentile is 255.2 days ($x = 255.2$).
 
     The 1st quartile is 255.216 days.
 
-    ``` Excel
+    ``` excel
     =NORM.INV(0.25,266,16)
     ```
 
@@ -316,23 +468,23 @@ It might help students make the distinction between percentiles from a distribut
 
     **Normal Probability Applet Information**
 
-    To find the z-score corresponding to the 50th percentile.
+    To find the $z$-score corresponding to the 50th percentile.
 
     1.  Select all the area to the left.
     2.  Type 0.5 in the Area box.
-    3.  Read the z-score from either box (right box or left box, they are the same).\\
+    3.  Read the $z$-score from either box (right box or left box, they are the same).
 
     ![](fig_50th_percentile.png)
 
-    With 50% of the area to the left, the z-score is 0.
+    With 50% of the area to the left, the $z$-score is 0.
 
-    ``` Excel
+    ``` excel
     =NORM.S.INV(0.5)
     ```
 
     $z = 0$
 
-    $\begin{align*} x &= \mu + z\sigma \\  &= 266 + (0)16 \\  &= 266\end{align*}$
+    $\begin{align*} x &= \mu + z\sigma \\ &= 266 + (0)16 \\ &= 266\end{align*}$
 
     The 50th percentile is 266 days ($x = 266$).
 
@@ -352,7 +504,7 @@ It might help students make the distinction between percentiles from a distribut
 
     <summary>Possible Solution</summary>
 
-    ``` Excel
+    ``` excel
     =PERCENTILE(B:B,0.8)
     ```
 
@@ -372,7 +524,7 @@ It might help students make the distinction between percentiles from a distribut
 
     <summary>Possible Solution</summary>
 
-    ``` Excel
+    ``` excel
     =PERCENTILE(C:C,0.4)
     ```
 
@@ -390,7 +542,7 @@ It might help students make the distinction between percentiles from a distribut
 
     <summary>Possible Solution</summary>
 
-    ``` Excel
+    ``` excel
     =PERCENTILE(A:A,0.95)
     ```
 
@@ -718,17 +870,17 @@ Assign Problem 1-3 on the day of Lesson 5. I think the students should have enou
 
         **Normal Probability Applet Information**
 
-        To find the probability corresponding to a z-score.
+        To find the probability corresponding to a $z$-score.
 
         1.  Shade the area(s) of interest.
-        2.  Type the z-score in the box (negative value the left box and positive values the right box).
+        2.  Type the $z$-score in the box (negative value the left box and positive values the right box).
         3.  Read the probability from the area box.
 
         ![](fig_pregnancy_less242.png)
 
         $P(X < 242) = P(Z < -1.5) = 0.0668$
 
-        ``` Excel
+        ``` excel
         =NORM.DIST(242,266,16,TRUE)
         ```
 
@@ -752,15 +904,15 @@ Assign Problem 1-3 on the day of Lesson 5. I think the students should have enou
 
         **Normal Probability Applet Information**
 
-        To find the probability corresponding to a z-score.
+        To find the probability corresponding to a $z$-score.
 
         1.  Shade the area(s) of interest.
-        2.  Type the z-score in the box (negative value the left box and positive values the right box).
+        2.  Type the $z$-score in the box (negative value the left box and positive values the right box).
         3.  Read the probability from the area box.
 
         ![](fig_pregnancy_less278.png)
 
-        ``` Excel
+        ``` excel
         =NORM.DIST(278,266,16,TRUE)
         ```
 
@@ -786,7 +938,7 @@ Assign Problem 1-3 on the day of Lesson 5. I think the students should have enou
 
         $P(242 < X < 278) = P(-1.5 < Z < 0.75) = 0.7734 - 0.0668 = 0.7066$
 
-        ``` Excel
+        ``` excel
         =NORM.DIST(278,266,16,TRUE) - NORM.DIST(242,266,16,TRUE)
         ```
 
@@ -816,10 +968,10 @@ Assign Problem 1-3 on the day of Lesson 5. I think the students should have enou
 
     **Normal Probability Applet Information**
 
-    To find the probability corresponding to a z-score.
+    To find the probability corresponding to a $z$-score.
 
     1.  Shade the area(s) of interest.
-    2.  Type the z-score in the box (negative value the left box and positive values the right box).
+    2.  Type the $z$-score in the box (negative value the left box and positive values the right box).
     3.  Read the probability from the area box.
 
     ![](fig_LSAT.png)
@@ -834,20 +986,646 @@ Assign Problem 1-3 on the day of Lesson 5. I think the students should have enou
 
     </details>
 
-    <!--- comment Adapted from Lesson 7 Hmk Quiz ---> <!--- comment Winter 2023 Computation Practice #9 --->
+    <!--- comment Adapted from Lesson 7 Hmk Quiz --->
+
+    <!--- comment Winter 2023 Computation Practice #9 --->
 
 # After Lessons 6 and 7
 
+Note: Some calculations for Lesson 7 are the calculations used in Lesson 9.
+
+## $Z$-Score Calculations
+
+### Variable $X$
+
+-   [ ] **Problem:** GRE
+
+    Scores on the quantitative portion of the GRE are approximately normal distributed with mean $\mu = 150.8$ and a standard deviation of $\sigma = 8.8$. Dianne earned a score of 155 on the quantitative portion of the GRE. What is the $z$-score corresponding to Dianne's score?
+
+    <details>
+
+    <summary>Possible Solution</summary>
+
+    $\mu = 150.8$
+
+    $\sigma = 8.8$
+
+    $x = 155$
+
+    $z = \frac{x - \mu}{\sigma} = \frac{155 - 150.8}{8.8} = 0.477273$
+
+    The $z$-score corresponding to Dianne's score of 155 is $z = 0.477$.
+
+    </details>
+
+    <!--- Adapted from Lesson 7 Prep Quiz --->
+
+    <!--- Winter 2023 Computation Practice #1 --->
+
+### Variable $\overline{X}$
+
+-   [ ] **Problem:** Date Money
+
+    Assume that the amount of money BYU-Idaho students spend on a date is right-skewed with a mean of \$16 and a standard deviation of \$20. What is the $z$-score corresponding to a random sample of 45 BYU-Idaho students with a mean of \$10 spent on their last date?
+
+    <details>
+
+    <summary>Possible Solution</summary>
+
+    $\mu = 16$
+
+    $\sigma = 20$
+
+    $n = 45$
+
+    $\overline{x} = 10$
+
+    $z = \frac{\overline{x} - \mu}{\frac{\sigma}{\sqrt{n}}} = \frac{10-16}{\frac{20}{\sqrt{45}}} = -2.01246$
+
+    The $z$-score corresponding to a reandom sample of 45 BYU-Idaho students with a mean of \$10 spent on their last date is $z = -2.012$.
+
+    </details>
+
+    <!--- From 221 Course Packet (Lesson 7 #4; Craig's exercises) --->
+
+    <!--- Winter 2023 Computation Practice #2 --->
+
+## Probability Calculations
+
+### Variable $X$
+
+-   [ ] **Problem:** Reading Speed
+
+    The reading speed of second grade students is approximately normal, with a mean of 90 words per minute (wpm) and a standard deviation of 10 wpm (Sullivan, pp. 439). What is the probability a randomly selected student will read more than 95 words per minute?
+
+    <details>
+
+    <summary>Possible Solution</summary>
+
+    $\mu = 90$
+
+    $\sigma = 10$
+
+    $x = 95$
+
+    $z = \frac{x-\mu}{\sigma} = \frac{95 - 90}{10} = 0.5$
+
+    **Normal Probability Information**
+
+    To find the probability corresponding to a $z$-score.
+
+    1.  Shade the side of interest.
+    2.  Type the $z$-score in the box (negative value the left box and positive values the right box).
+    3.  Read the probability from the area box.
+
+    ![](fig_ReadingSpeed.png)
+
+    ``` Excel
+    =1-NORM.S.DIST(0.5,TRUE)
+    ```
+
+    $P(X>95) = P(Z>0.5) = 0.3085$
+
+    The probability a randomly selected student will read faster than 95 words per minute is 0.309.
+
+    </details>
+
+    <!--- Adapted from my 221 Wiki May 7, 2021 --->
+
+    <!--- Winter 2023 Computation Practice #12 --->
+
+### Variable $\overline{X}$
+
+-   [ ] **Problem:** GPA
+
+    Suppose the mean GPA of BYU-Idaho students is 3.5 and the standard deviation is 0.7. It is well known that this distribution is left-skewed. What is the probability that a random sample of 70 students will have a mean GPA less than 3.6?
+
+    <details>
+
+    <summary>Possible Solution</summary>
+
+    $\mu = 3.5$
+
+    $\sigma = 0.7$
+
+    $n = 70$
+
+    $\overline{x} = 3.6$
+
+    $z = \frac{\overline{x} - \mu}{\frac{\sigma}{\sqrt{n}}} = \frac{3.6 - 3.5}{\frac{0.7}{\sqrt{70}}} = 1.19523$
+
+    **Normal Probability Applet Information**
+
+    To find the probability corresponding to a $z$-score.
+
+    1.  Shade the side of interest.
+    2.  Type the $z$-score in the box (negative value the left box and positive values the right box).
+    3.  Read the probability from the area box.
+
+    ![](fig_GPA.png)
+
+    $P(\overline{X} < 3.6) = P(Z<1.195) = 0.8840$
+
+    ``` Excel
+    =NORM.DIST(3.6, 3.5, 0.7/SQRT(70), TRUE)
+    ```
+
+    The probability a randomly selected sample of 70 students will have a mean GPA less than 3.6 is 0.884.
+
+    </details>
+
+    <!--- Adapted from Lesson 7 Prep Quiz --->
+
+    <!--- Winter 2023 Computation Practice #13 --->
+
+-   [ ] **Problem:** GPA
+
+    Calculate the probability, if possible. If it is not possible to compute the probability explain why not.
+
+    Suppose the mean GPA of BYU-Idaho students is 3.5 and the standard deviation is 0.7. It is well known that this distribution is left-skewed. What is the probability that a random sample of 17 students will have a mean GPA less than 3.2?
+
+    <details>
+
+    <summary>Possible Solution</summary>
+
+    We know $\overline{X}$ is not normally distributed since $n=17$ and the population (of GPAs) is left-skewed. So we **cannot** calculate this probability!
+
+    </details>
+
+    <!--- Adapted from Lesson 7 Prep Quiz --->
+
+    <!--- Adapted from Winter 2023 Computation Practice #14a --->
+
+-   [ ] **Problem:** Reading Speed (Take 2)
+
+    Calculate the probability, if possible. If it is not possible to compute the probability explain why not.
+
+    The reading speed of second grade students is approximately normal, with a mean of 90 words per minute (wpm) and a standard deviation of 10 wpm (Sullivan, pp. 439). What is the probability that a random sample of 3 second grade students will have a mean reading rate less than 93 words per minute?
+
+    <details>
+
+    <summary>Possible Solution</summary>
+
+    $\mu = 90$
+
+    $\sigma = 10$
+
+    $n = 3$
+
+    $\overline{x} = 93$
+
+    $z = \frac{\overline{x} - \mu}{\frac{\sigma}{\sqrt{n}}} = \frac{93-90}{\frac{10}{\sqrt{3}}} = 0.519615$
+
+    **Normal Probability Applet Information**
+
+    To find the probability corresponding to a $z$-score.
+
+    1.  Shade the side of interest.
+    2.  Type the $z$-score in the box (negative value the left box and positive values the right box).
+    3.  Read the probability from the area box.
+
+    ![](fig_ReadingSpeed2.png)
+
+    $P(\overline{X} <93) = P(Z < 0.52) = 0.6985$
+
+    ``` Excel
+    =NORM.DIST(93, 90, 10/SQRT(3), TRUE)
+    ```
+
+    The probability that a random sample of 3 second grade students will have a mean reading rate less than 93 words per minute is 0.699.
+
+    </details>
+
+    <!--- Adapted from my 221 Wiki May 7, 2021 --->
+
+    <!--- Winter 2023 Computation Practice #14b --->
+
+-   [ ] **Problem:** Generic Sampling Distribution
+
+    Calculate the probability, if possible. If it is not possible to compute the probability explain why not.
+
+    Given data that are right-skewed, $\mu = 5$, and $\sigma = 2$. What is the probability a random sample of 12 will have a mean greater than 10?
+
+    <details>
+
+    <summary>Possible Solution</summary>
+
+    We know $\overline{X}$ is not normally distributed since $n=12$ and the population is right-skewed. So we **cannot** calculate this probability!
+
+    </details>
+
+    <!--- Adapted from 221 Course Packet Lesson 7 #5 (Craig's exercises) --->
+
+    <!--- Winter 2023 Computation Practice #14c --->
+
 # After Lesson 9
+
+-   [ ] **Problem:** PH Probability and Hypothesis Test
+
+    In a manufacturing facility, the pH of a solution must be carefully monitored. Historically, the pH values have been normally distributed with mean 3.25 and standard deviation 0.08. Find the probability that on the next test the pH of the solution will be less than 3.32.
+
+    <details>
+
+    <summary>Possible Solution</summary>
+
+    $\mu = 3.25$
+
+    $\sigma = 0.08$
+
+    $x = 3.32$
+
+    $z = \frac{x - \mu}{\sigma} = \frac{3.32 - 3.25}{0.08} = 0.875$
+
+    **Normal Probability Applet Information**
+
+    To find the probability corresponding to a $z$-score.
+
+    1.  Shade the side of interest.
+    2.  Type the $z$-score in the box (negative value the left box and positive values the right box).
+    3.  Read the probability from the area box. 
+
+    ![](fig_PH.png)
+
+    $P(X < 3.32) = P(Z < 0.875) = 0.8092$
+
+    The probability that on the next test the pH will be less than 3.32 is 0.809.
+
+    </details>
+
+    <!--- From 221 Course Packet (Lesson 8 #15; Craig's exercises) --->
+
+    <!--- Winter 2023 Computation Practice #10 --->
+
+    In a manufacturing facility, the pH of a solution must be carefully monitored. Historically, the pH values have been normally distributed with mean 3.25 and standard deviation 0.08. The quality control department wants to test whether the true mean pH is less than 3.25. They will use the next sample to complete this test. The next sample has a pH of 3.32.
+
+    <details>
+
+    <summary>Possible Solution</summary>
+
+    **Null and alternative hypotheses**
+
+    $H_0: \mu = 3.25$
+
+    $H_a: \mu < 3.25$
+
+    **Level of significance**
+
+    $\alpha = 0.05$
+
+    **Summary statistics**
+
+    $x = 3.32$
+
+    Assume $\sigma = 0.08$
+
+    **Test statistic**$z = \frac{x - \mu}{\sigma} = \frac{3.32-3.25}{0.08} = 0.875$
+
+    *Note: This is the same as* $z = \frac{\overline{x} - \mu}{\frac{\sigma}{\sqrt{n}}} = \frac{3.32 - 3.25}{\frac{0.08}{\sqrt{1}}} = 0.875$*.*
+
+    **P-value and comparison to** $\alpha$
+
+    Because the alternative hypothesis is $\mu < 3.25$ we are looking for the probability of being less than the test statistic.
+
+    **Normal Probability Applet Information**
+
+    To find the probability corresponding to a $z$-score.
+
+    1.  Shade the side of interest.
+    2.  Type the $z$-score in the box (negative value the left box and positive values the right box).
+    3.  Read the probability from the area box. 
+
+    ![](fig_PH.png)
+
+    $P(X < 3.32) = P(Z < 0.875) = 0.8092$
+
+    $p$-value = 0.809 \> 0.05 = $\alpha$
+
+    **Conclusion**
+
+    We [fail to reject]{.underline} the null hypothesis.
+
+    **English Sentence**
+
+    There is [insufficient]{.underline} evidence to suggest that the mean pH is less than 3.25.
+
+    </details>
+
+    <!--- Adapted from Winter 2023 Computation Practice # 10 --->
+
+    <!--- Adapted from 221 Course Packet (Lesson 8 #15; Craig's exercises) --->
+
+    <!--- Notice this problem is presented as a probability question and as a hypothesis test question. Give at the same time -- try to help students make the connections. --->
+
+    Compare the previous two parts. The first part is a probability question. The second part is a hypothesis test question. What similarities do you notice?
+
+    <details>
+
+    <summary>Possible Solution</summary>
+
+    The probability calculation in the first part is the same calculation in the Test Statistic and p-value calculations of the hypothesis in the second part.
+
+    </details>
 
 # After Lesson 10
 
+## Sample Size Calculations
+
+-   [ ] **Problem:** Blinks
+
+    Suppose you are scientist and you want to use a confidence interval to estimate the true mean number of times a person in your city blinks each day. Find the sample size required to construct a 90% confidence interval with a margin of error 43 blinks for the true mean number of time a person blinks each day. Assume the standard deviation of blinks per day is 1240.
+
+    <details>
+
+    <summary>Possible Solution</summary>
+
+    $z^* = 1.645$ (because we want a confidence level of 90%)
+
+    $m = 43$
+
+    $\sigma = 1240$
+
+    $n = \left(\frac{z^* \sigma}{m}\right)^2 = \left(\frac{(1.645)(1240)}{1240}\right)^2 = 2250.29$
+
+    We need a sample size of at least 2251. *Remember to round up to the next integer with sample size calculations.*
+
+    </details>
+
+    <!--- Adapted from Lesson 17 Hmk Quiz --->
+
+    <!--- Winter 2023 Computation Practice #18 --->
+
 # After Lesson 16
 
+Note: Some calculations for Lesson 16 are the calculations used in Lesson 17.
+
+## $Z$-Score Calculations
+
+### Variable $\hat{P}$
+
+-   [ ] **Problem:** Soccer
+
+    John is a soccer player. He knows that he scores a goal 60% of the time. What is the $z$-score corresponding to John scoring 51 of 78 attempted goals?
+
+    <details>
+
+    <summary>Possible Solution</summary>
+
+    $p = 0.6$
+
+    $x = 51$
+
+    $n = 78$
+
+    $\hat{p} = \frac{x}{n} = \frac{51}{78} = 0.653846$\
+    $\begin{align*}
+    z &= \frac{\hat{p} - p}{\sqrt{\frac{p(1-p)}{n}}} \\
+      &= \frac{(51/78) - 0.6}{\sqrt{\frac{0.6(0.4)}{78}}} \\
+      &= 0.970725
+    \end{align*}$
+
+    The $z$-score corresponding to John scoring 51 of 78 attempted goals is $z = 0.971$.
+
+    </details>
+
+    <!--- Adapted from my 221 Wiki June 16, 2021 (Ben's exercises) --->
+
+    <!--- Winter 2023 Computation Practice #3 --->
+
+## Probability Calculations
+
+### Variable $\hat{P}$
+
+-   [ ] **Problem:** Phishing Emails
+
+    First Data Corp. records indicate that in 2005, 43% of adult email users received a phishing email. A phishing email replicates an authentic site for the purpose of stealing personal information such as account numbers and passwords. Suppose a random sample of 400 adults will be surveyed on whether they have received phishing emails to determine recent trends. What is the probability that more than 38% of those in such a survey would have received a phishing email?
+
+    <details>
+
+    <summary>Possible Solution</summary>
+
+    $p = 0.43$
+
+    $n = 400$
+
+    $\hat{p} = 0.38$
+
+    $z = \frac{\hat{p}-p}{\sqrt{\frac{p(1-p)}{n}}} = \frac{0.38-0.43}{\sqrt{\frac{0.43(1-0.43)}{400}}} = -2.01989$
+
+    **Normal Probability Applet Information**
+
+    To find the probability corresponding to a $z$-score.
+
+    1.  Shade the side of interest.
+    2.  Type the $z$-score in the box (negative value the left box and positive values the right box).
+    3.  Read the probability from the area box. 
+
+    ![](fig_PhishingEmail.png)
+
+    $P(\hat{P} > 0.38) = P(Z > -2.01989) = 0.9783$
+
+    ``` Excel
+    =1-NORM.DIST(0.38,0.43,SQRT(0.43*(1-0.43)/400),TRUE)
+    ```
+
+    The probability that more than 38% of respondents in such a survey would have received a phishing email is 0.978.
+
+    </details>
+
+    <!--- From Lesson 16 Homework; numbers changed. --->
+
+    <!--- Winter 2023 Computation Practice #8  --->
+
+```{=html}
+<!-- -->
+```
+-   [ ] **Problem:** Stock Market
+
+    You take a simple random sample of 200 adults from a town in the Western United States to determine the proportion of those in town who invest in the stock market. Assume the unknown population proportion or percentage of people in town who invest in the stock market is (or 30%). What is the probability that more than 25% of those in such a survey would have invested in the stock market?
+
+    <details>
+
+    <summary>Possible Solution</summary>
+
+    $p = 0.3$
+
+    $n = 200$
+
+    $\hat{p} = 0.25$
+
+    $z = \frac{\hat{p}-p}{\sqrt{\frac{p(1-p)}{n}}} = \frac{0.25-0.3}{\sqrt{\frac{0.3(0.7)}{200}}} = -1.54303$
+
+    **Normal Probability Applet Information**
+
+    To find the probability corresponding to a $z$-score.
+
+    1.  Shade the side of interest.
+    2.  Type the $z$-score in the box (negative value the left box and positive values the right box).
+    3.  Read the probability from the area box. 
+
+    ![](fig_StockMarket.png)
+
+    $P(\hat{P} > 0.25) = P(Z > -1.543) = 0.9386$
+
+    ``` Excel
+    =1-NORM.DIST(0.25,0.3,SQRT(0.3*(0.7)/200),TRUE)
+    ```
+
+    The probability that more than 38% of respondents in such a survey would have received a phishing email is 0.978.
+
+    </details>
+
+    <!--- Adapted from Practice Exam 3; numbers and wording changed slightly --->
+
+    <!--- Winter 2023 Computation Practice #11 --->
+
+-   [ ] **Problem:** Smoking Teens
+
+    Calculate the probability, if possible. If it is not possible to compute the probability explain why not.
+
+    A study was conducted to determine the proportion of American teenagers who smoke. Previous surveys showed that 15% percent of teenagers smoke. A Gallup survey interviewed a nationally representative sample of 785 teenagers. What is the probability less than 97 teenagers in the survey smoke?
+
+    <details>
+
+    <summary>Possible Solution</summary>
+
+    $p = 0.15$
+
+    $n = 785$
+
+    $np = 785(0.15) = 117.75 \geq 10$ (check!)
+
+    $n(1-p) = 785(1-0.15) = 667.25 \geq 10$ (check!)
+
+    $x = 97$
+
+    $\hat{p} = \frac{x}{n} = \frac{97}{785} = 0.123567$
+
+    $z = \frac{\hat{p} - p}{\sqrt{\frac{p(1-p)}{n}}} =  \frac{\frac{97}{785} - 0.15}{\sqrt{\frac{0.15(1-0.15)}{785}}} = -2.07409$
+
+    ``` Excel
+    =((97/785) - 0.15)/SQRT(0.15*(1-0.15)/785)
+    ```
+
+    **Normal Probability Applet Information**
+
+    To find the probability corresponding to a $z$-score.
+
+    1.  Shade the side of interest.
+    2.  Type the $z$-score in the box (negative value the left box and positive values the right box).
+    3.  Read the probability from the area box.
+
+    ![](fig_SmokingTeens.png)
+
+    $P(X < 97) = P(\hat{P} < 0.124) = P(Z < -2.074) = 0.0190$
+
+    ``` Excel
+    =NORM.DIST(97/785, 0.15, SQRT(0.15*(1-0.15)/785), TRUE)
+    ```
+
+    The probability less than 97 teenagers in the survey smoke is 0.019.
+
+    </details>
+
+    <!--- Adapted from Lesson 17 Hmk Quiz --->
+
+    <!--- Revised from Winter 2023 Computation Practice #14d --->
+
+-   [ ] **Problem:** COVID
+
+    Calculate the probability, if possible. If it is not possible to compute the probability explain why not.
+
+    Data from the Centers for Disease Control and Prevention shows that among the people in the United States who are fully vaccinated, the probability of getting COVID is very, very small: only 0.0001. Suppose you plan to survey 50,000 people ($n=50000$) who are fully vaccinated to see if they contracted COVID after getting the vaccine. What is the probability that less than 10 of the fully vaccinated people you survey contracted COVID after getting the vaccine?
+
+    <details>
+
+    <summary>Possible Solution</summary>
+
+    $p = 0.0001$
+
+    $n = 50000$
+
+    $np = 50000(0.0001) = 5 \ngeq 10$
+
+    Since $np \neq 10$ we see $\hat{P}$ is not normally distributed. So we **cannot** calculate this probability!
+
+    </details>
+
+    <!--- Originally from 221 Course Packet (Lesson 16 #11; Craig's exercises) --->
+
+    <!--- Adapted from Winter 2023 Computation Practice #15 --->
+
+## Sample Size
+
+-   [ ] **Problem:** Generic Sampling Distribution Check
+
+    Given the true proportion is $p = 0.1$. What is the smallest value of $n$ that satisfies the requirements for the random variable $\hat{p}$ to be normally distributed?
+
+    <details>
+
+    <summary>Possible Solution</summary>
+
+    $p = 0.1$
+
+    $\begin{align*}np &\geq 10 \\n(0.1) &\geq 10 \\n &\geq \frac{10}{0.1} = 100 \\n &\geq 100\end{align*}$
+
+    $\begin{align*} n(1-p) &\geq 10 \\ n(0.9) &\geq 10 \\ n &\geq \frac{10}{0.9} = 11.\overline{1} \\ n &\geq 11.\overline{1} \end{align*}$
+
+    Since both $np$ and $n(1-p)$ are greater than 10 when $n \geq 100$, we see that the smallest value of $n$ so that $\hat{P}$ is normally distributed is $n=100$.
+
+    </details>
+
+    <!--- Adapted from Lesson 16 Prep Quiz and Lesson 16 Homework Quiz --->
+
+    <!--- Winter 2023 Computation Practice #16 --->
+
+# After Lesson 17
+
+## Sample Size
+
+-   [ ] **Problem:** Doctors
+
+    A survey of doctors is planned to see what percentage prescribe a certain medication. Find the sample size required to achieve a 5% margin of error if the confidence level is 90%.
+
+    <details>
+
+    <summary>Possible Solution</summary>
+
+    $z^* = 1.645$ (because we want a confidence level of 90%)
+
+    $m = 0.05$
+
+    $n = \left(\frac{z^*}{2m}\right)^2 = \left(\frac{1.645}{2(0.05)}\right)^2 = 270.603$
+
+    We need a sample size of at least 271. *Remember to round up to the next integer with sample size calculations.*
+
+    </details>
+
+    <!--- Adapted from Lesson 17 Hmk Quiz--->
+
+    <!--- Winter 2023 Computation Practice #17 --->
+
+-   [ ] **Problem:** Dow Jones Industrial Average
+
+    A recent book noted that only 20% of all investment managers outperform the Dow Jones Industrial Average over a five-year period. Suppose you are in charge of designing the study. What sample size would be needed to construct a 98% confidence interval with a margin of error 3%.
+
+    <details>
+
+    <summary>Possible Solution</summary>
+
+    $p^* = 0.2$
+
+    $z^* = 2.326$ (because we want a confidence level of 98%)
+
+    $m = 0.03$
+
+    $n = \left( \frac{z^*}{m} \right)^2 p^*(1 - p^*) = \left(\frac{2.326}{0.03}\right)^2(0.02)(0.8) = 961.827$
+
+    We need a sample size of at least 962. *Remember to round up to the next integer with sample size calculations.*
+
+    </details>
+
+    <!--- Adapted from Practice Exam 3 --->
+
+    <!--- Winter 2023 Computation Practice #19 --->
+
 # After Lesson 22
-
-<details>
-
-<summary>Possible Solution</summary>
-
-</details>
