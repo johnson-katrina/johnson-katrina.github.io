@@ -1,0 +1,44 @@
+---
+title: "Blood Type"
+---
+
+The probability that a randomly chosen North American has a particular ABO blood type and Rh factor is given below.
+
+*Source: "The Analysis of Biological Data" by Whitlock and Schluter, 3rd Edition, page 125.*
+
+| Blood Type | Probability |
+|------------|-------------|
+| O+         | 0.374       |
+| O-         | 0.066       |
+| A+         | 0.357       |
+| A-         | 0.063       |
+| B+         | 0.085       |
+| B-         | 0.015       |
+| AB+        | 0.034       |
+| AB-        | 0.006       |
+
+-   What is the probability that a randomly selected North American, will have blood type A?
+
+    <details>
+
+    <summary>Possible Solution</summary>
+
+    P( has type A+ ) + P( has type A- ) = 0.357 + 0.063 = 0.42
+
+    The probability that randomly selected North American will have type A blood is 0.42.
+
+    </details>
+
+-   What is the probability that a randomly selected North American, will '''not''' have O+ blood type?
+
+    <details>
+
+    <summary>Possible Solution</summary>
+
+    1 - P( has type 0+) = 1 - 0.374 = 0.626
+
+    The probability that a randomly selected North American will not have O+ blood is 0.626.
+
+    </details>
+
+<!--- From my 221 Wiki April 21, 2021--->

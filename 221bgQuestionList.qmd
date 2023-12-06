@@ -1,5 +1,5 @@
 ---
-title: "Question List"
+title: "Brain Gain Question List"
 toc: false
 ---
 
@@ -13,104 +13,19 @@ As the problems are selected the box can be checked and a note can indicate whic
 
 -   [ ] **Problem:** Probability Rules Error Identification
 
-    What's wrong with the statement, "There is a 1.2 probability of snow in January in Rexburg"?
-
-    <details>
-
-    <summary>Possible Solution</summary>
-
-    A probability is a number between 0 and 1, $0 \leq p \leq 1$. The probability of snow cannot be 1.2 because $1.2 \nleq 1$ (rather 1.2 \> 1).
-
-    </details>
-
-    <!--- From my 221 Wiki April 21, 2021 --->
+    {{< include 221bg_ProbabilityRulesErrorIdentification.qmd >}}
 
 -   [ ] **Problem:** Snow in May
 
-    Suppose the probability of snow in Rexburg in May is 0.79. What is the probability that there will be no snow in Rexburg in May?
-
-    <details>
-
-    <summary>Possible Solution</summary>
-
-    1-0.79 = 0.21
-
-    The probability that there will be no snow in Rexburg in May is 0.21.
-
-    </details>
-
-    <!--- From my 221 Wiki April 21, 2021--->
+    {{< include 221bg_SnowInMay.qmd >}}
 
 -   [ ] **Problem:** Tokens
 
-    A box of tokens contains 8 blue tokens, 6 red tokens, and 4 yellow tokens.
-
-    -   If a token is selected at random from the box, what is the probability that the token is blue?
-
-        <details>
-
-        <summary>Possible Solution</summary>
-
-        P( token is blue ) = $\frac{8}{8+6+4} = \frac{8}{18} = \frac{4}{9} = 0.\overline{4}$
-
-        </details>
-
-    -   If a token is selected at random from the box, what is the probability that the token is not red?
-
-        <details>
-
-        <summary>Possible Solution</summary>
-
-        P( token is red ) = $\frac{6}{18} = 0.\overline{3}$
-
-        P( token is NOT red ) = $1 - 0.\overline{3} = 0.\overline{6}$
-
-        </details>
-
-        <!--- From my 221 Wiki April 21, 2021--->
+    {{< include 221bg_Tokens.qmd >}}
 
 -   [ ] **Problem:** Blood Type
 
-    The probability that a randomly chosen North American has a particular ABO blood type and Rh factor is given below.
-
-    *Source: "The Analysis of Biological Data" by Whitlock and Schluter, 3rd Edition, page 125.*
-
-    | Blood Type | Probability |
-    |------------|-------------|
-    | O+         | 0.374       |
-    | O-         | 0.066       |
-    | A+         | 0.357       |
-    | A-         | 0.063       |
-    | B+         | 0.085       |
-    | B-         | 0.015       |
-    | AB+        | 0.034       |
-    | AB-        | 0.006       |
-
-    -   What is the probability that a randomly selected North American, will have blood type A?
-
-        <details>
-
-        <summary>Possible Solution</summary>
-
-        P( has type A+ ) + P( has type A- ) = 0.357 + 0.063 = 0.42
-
-        The probability that randomly selected North American will have type A blood is 0.42.
-
-        </details>
-
-    -   What is the probability that a randomly selected North American, will '''not''' have O+ blood type?
-
-        <details>
-
-        <summary>Possible Solution</summary>
-
-        1 - P( has type 0+) = 1 - 0.374 = 0.626
-
-        The probability that a randomly selected North American will not have O+ blood is 0.626.
-
-        </details>
-
-    <!--- From my 221 Wiki April 21, 2021--->
+    {{< include 221bg_BloodType.qmd >}}
 
 -   [ ] **Problem:** 3 Coin Flips
 
@@ -1218,6 +1133,10 @@ Note: Some calculations for Lesson 7 are the calculations used in Lesson 9.
 
     <!--- Winter 2023 Computation Practice #14c --->
 
+-   [ ] **Problem:** TV (Probability)
+
+    {{< include 221bg_TV_Probability.qmd >}}
+
 # After Lesson 9
 
 -   [ ] **Problem:** PH Probability and Hypothesis Test
@@ -1377,7 +1296,7 @@ Note: Some calculations for Lesson 16 are the calculations used in Lesson 17.
     $n = 78$
 
     $\hat{p} = \frac{x}{n} = \frac{51}{78} = 0.653846$\
-    $\begin{align*} z &= \frac{\hat{p} - p}{\sqrt{\frac{p(1-p)}{n}}} \\  &= \frac{(51/78) - 0.6}{\sqrt{\frac{0.6(0.4)}{78}}} \\  &= 0.970725 \end{align*}$
+    $\begin{align*} z &= \frac{\hat{p} - p}{\sqrt{\frac{p(1-p)}{n}}} \\ &= \frac{(51/78) - 0.6}{\sqrt{\frac{0.6(0.4)}{78}}} \\ &= 0.970725 \end{align*}$
 
     The $z$-score corresponding to John scoring 51 of 78 attempted goals is $z = 0.971$.
 
