@@ -1,0 +1,41 @@
+---
+title: "LSAT"
+---
+
+The Law School Admission Test (LSAT) is required for admission to many law schools. The scores on the LSAT are approximately normal with mean of 150 and standard deviation of 9. Queen's School of Business in Kingston, Ontario requires a minimum LSAT score of 157 for admission. What is the probability that a randomly selected student will score below 157?
+
+<details>
+
+<summary>Possible Solution</summary>
+
+\$\mu = 150 \$
+
+\$\sigma = 9 \$
+
+$x = 157$
+
+$z = \frac{x - \mu}{\sigma} = \frac{157 - 150}{9} = 0.\overline{7}$
+
+**Normal Probability Applet Information**
+
+To find the probability corresponding to a $z$-score.
+
+1.  Shade the area(s) of interest.
+2.  Type the $z$-score in the box (negative value the left box and positive values the right box).
+3.  Read the probability from the area box.
+
+![](fig_LSAT.png)
+
+```         
+=NORM.DIST(157,150,9,TRUE)
+```
+
+$P(X < 157) = P(Z < 0.\overline{7}) = 0.7817$
+
+The probability a randomly selected student will score below 157 is 0.782.
+
+</details>
+
+<!--- comment Adapted from Lesson 7 Hmk Quiz --->
+
+<!--- comment Winter 2023 Computation Practice #9 --->

@@ -1,0 +1,101 @@
+---
+title: "Pregnancy (Probability)"
+---
+
+The length of human pregnancies from conception to birth is normally distributed with mean 266 days and a standard deviation of 16 days.
+
+-   What is the probability a pregnancy lasts less than 242 days?
+
+    <details>
+
+    <summary>Possible Solution</summary>
+
+    $\mu = 266$
+
+    $\sigma = 16$
+
+    $x = 242$
+
+    $z = \frac{x - \mu}{\sigma} = \frac{242 - 266}{16} = -1.5$
+
+    **Normal Probability Applet Information**
+
+    To find the probability corresponding to a $z$-score.
+
+    1.  Shade the area(s) of interest.
+    2.  Type the $z$-score in the box (negative value the left box and positive values the right box).
+    3.  Read the probability from the area box.
+
+    ![](fig_pregnancy_less242.png)
+
+    $P(X < 242) = P(Z < -1.5) = 0.0668$
+
+    ``` excel
+    =NORM.DIST(242,266,16,TRUE)
+    ```
+
+    The probability that a pregnancy lasts less than 242 days is 0.067.
+
+    </details>
+
+-   What is the probability a pregnancy lasts less than 278 days?
+
+    <details>
+
+    <summary>Possible Solution</summary>
+
+    $\mu = 266$
+
+    $\sigma = 16$
+
+    $x = 278$
+
+    $z = \frac{x - \mu}{\sigma} = \frac{278 - 266}{16} = 0.75$
+
+    **Normal Probability Applet Information**
+
+    To find the probability corresponding to a $z$-score.
+
+    1.  Shade the area(s) of interest.
+    2.  Type the $z$-score in the box (negative value the left box and positive values the right box).
+    3.  Read the probability from the area box.
+
+    ![](fig_pregnancy_less278.png)
+
+    ``` excel
+    =NORM.DIST(278,266,16,TRUE)
+    ```
+
+    $P(X < 278) = P(Z < 0.75) = 0.7734$
+
+    The probability that a pregnancy lasts less than 278 days is 0.773.
+
+    </details>
+
+-   What is the probability a pregnancy lasts between 242 and 278 days?
+
+    <details>
+
+    <summary>Possible Solution</summary>
+
+    We are looking for the area between $z = -1.5$ and $z = 0.75$, shown below.
+
+    ![](fig_pregnancy_between242and278.png)
+
+    We can find this area by taking away the area to the left of $z=-1.5$ from the area to the left of $0.75$.
+
+    ![](fig_pregnancy_between242and278_equation.png)
+
+    $P(242 < X < 278) = P(-1.5 < Z < 0.75) = 0.7734 - 0.0668 = 0.7066$
+
+    ``` excel
+    =NORM.DIST(278,266,16,TRUE) - NORM.DIST(242,266,16,TRUE)
+    ```
+
+    The probability that a pregnancy lasts between 242 and 278 days is 0.707.
+
+    </details>
+
+<!--- Adapted from my 221 Wiki April 30, 2021 (Ben's exercises) --->
+
+<!--- Winter 2023 Computation Practice #7 --->

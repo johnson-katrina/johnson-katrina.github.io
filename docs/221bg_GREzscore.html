@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>K Johnson - Comparing Mean and Median</title>
+<title>K Johnson - GRE (z-score)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -110,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Comparing Mean and Median</h1>
+<h1 class="title">GRE (z-score)</h1>
 </div>
 
 
@@ -125,112 +125,19 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<ul>
-<li><p>Consider the following data set 6, 58, 100.</p>
-<ul>
-<li><p>Calculate the mean.</p>
+<p>Scores on the quantitative portion of the GRE are approximately normal distributed with mean <span class="math inline">\(\mu = 150.8\)</span> and a standard deviation of <span class="math inline">\(\sigma = 8.8\)</span>. Dianne earned a score of 155 on the quantitative portion of the GRE. What is the <span class="math inline">\(z\)</span>-score corresponding to Dianne’s score?</p>
 <details>
 <summary>
-<p>Possible Solution</p>
+Possible Solution
 </summary>
-<p><span class="math inline">\(\overline{x} = \frac{6 + 58 + 100}{3} = 54.\overline{6}\)</span></p>
-<p>The mean of the data is <span class="math inline">\(54.\overline{6}\)</span>.</p>
-</details></li>
-<li><p>Calculate the median.</p>
-<details>
-<summary>
-<p>Possible Solution</p>
-</summary>
-<p>The data set in order is 6, 58, 100. We see the middle value is 58.</p>
-<p>The median of the data is 58.</p>
-</details></li>
-<li><p>Suppose the 6 was a typo and was actually supposed to be a 60.</p>
-<ul>
-<li><p>What is the mean of the corrected data? Did the mean increase, decrease, or stay the same when <strong>one</strong> number in the data changed?</p>
-<details>
-<summary>
-<p>Possible Solution</p>
-</summary>
-<p><span class="math inline">\(\overline{x} = \frac{60 + 58 + 100}{3} = 72.\overline{6}\)</span></p>
-<p>The mean of the corrected data is <span class="math inline">\(72.\overline{6}\)</span>.</p>
-<p><span class="math inline">\(72.\overline{6} &gt; 54.\overline{6}\)</span></p>
-<p>The mean increased.</p>
-</details></li>
-<li><p>What is the median of the correct data? Did the median increase, decrease, or stay the same when <strong>one</strong> number in the data changed?</p>
-<details>
-<summary>
-<p>Possible Solution</p>
-</summary>
-<p>The corrected data set in order is 58, 60, 100. We see the middle value is 60. The median of the corrected data is 60.</p>
-<p>60 &gt; 58</p>
-<p>The median increased.</p>
-</details></li>
-</ul></li>
-</ul></li>
-<li><p>Consider the following data set 6, 87, 100.</p>
-<ul>
-<li><p>Calculate the mean.</p>
-<details>
-<summary>
-<p>Possible Solution</p>
-</summary>
-<p><span class="math inline">\(\overline{x} = \frac{6 + 87 + 100}{3} = 64.\overline{3}\)</span></p>
-<p>The mean of the data is <span class="math inline">\(64.\overline{3}\)</span>.</p>
-</details></li>
-<li><p>Calculate the median.</p>
-<details>
-<summary>
-<p>Possible Solution</p>
-</summary>
-<p>The data set in order is 6, 87, 100. We see the middle value is 87.</p>
-<p>The median of the data is 87.</p>
-</details></li>
-<li><p>Suppose the 6 was a typo and was actually supposed to be a 60.</p>
-<ul>
-<li><p>What is the mean of the corrected data? Did the mean increase, decrease, or stay the same when <strong>one</strong> number in the data changed?</p>
-<details>
-<summary>
-<p>Possible Solution</p>
-</summary>
-<p><span class="math inline">\(\overline{x} = \frac{60 + 87 + 100}{3} = 82.\overline{3}\)</span></p>
-<p>The mean of the corrected data is <span class="math inline">\(82.\overline{3}\)</span>.</p>
-<p><span class="math inline">\(82.\overline{3} &gt; 64.\overline{3}\)</span></p>
-<p>The mean increased.</p>
-</details></li>
-<li><p>What is the median of the correct data? Did the median increase, decrease, or stay the same when <strong>one</strong> number in the data changed?</p>
-<details>
-<summary>
-<p>Possible Solution</p>
-</summary>
-<p>The corrected data set in order is 60, 87, 100. We see the middle value is 87. The median of the corrected data is 87.</p>
-<p>87 = 87</p>
-<p>The median stayed the same.</p>
-</details></li>
-</ul></li>
-</ul></li>
-<li><p>Suppose you have a set of 100 exam grades and the teacher noticed that the a student’s grade recorded as a 6 was actually supposed to be a 60.</p>
-<ul>
-<li><p>Would changing the score from 6 to 60 cause the mean of the 100 grades to increase, decrease or stay the same?</p>
-<details>
-<summary>
-<p>Possible Solution</p>
-</summary>
-<p>We saw with the toy data sets ({6, 58,100} and {6, 87, 100}) that changing the 6 to a 60 caused the mean to increase. Because 6 increased to 60 this caused the mean to increase.</p>
-<p>Using this observation we see that changing the <strong>one</strong> score from 6 to 60 in the data set of 100 grades will also cause the mean to increase.</p>
-</details></li>
-<li><p>Would changing the score from 6 to 60 cause the median of the 100 grades to increase, decrease or stay the same?</p>
-<details>
-<summary>
-<p>Possible Solution</p>
-</summary>
-<p>We saw with the toy data sets ({6, 58,100} and {6, 87, 100}) that changing the 6 to a 60 had a different effect on the median in each data set. This is because calculating the median requires that we compare the number 6 (or the corrected number 60) to every value in the data set when we order them. So we have to know the other values to know how the median is effected when we change the 6 to a 60.</p>
-<p>Using this observation we see that don’t know how the median will change when we change the <strong>one</strong> score from 6 to a 60 in the 100 grades.</p>
-<p>We would have to know the rest of the 100 grades to know how the median would change.</p>
-</details></li>
-</ul></li>
-</ul>
-<!--- Adapted from Practice Exam 1 --->
-<!--- Winter 2023 Computation Practice #20 --->
+<p><span class="math inline">\(\mu = 150.8\)</span></p>
+<p><span class="math inline">\(\sigma = 8.8\)</span></p>
+<p><span class="math inline">\(x = 155\)</span></p>
+<p><span class="math inline">\(z = \frac{x - \mu}{\sigma} = \frac{155 - 150.8}{8.8} = 0.477273\)</span></p>
+<p>The <span class="math inline">\(z\)</span>-score corresponding to Dianne’s score of 155 is <span class="math inline">\(z = 0.477\)</span>.</p>
+</details>
+<!--- Adapted from Lesson 7 Prep Quiz --->
+<!--- Winter 2023 Computation Practice #1 --->
 
 
 

@@ -1,0 +1,25 @@
+---
+title: "GRE (z-score)"
+---
+
+Scores on the quantitative portion of the GRE are approximately normal distributed with mean $\mu = 150.8$ and a standard deviation of $\sigma = 8.8$. Dianne earned a score of 155 on the quantitative portion of the GRE. What is the $z$-score corresponding to Dianne's score?
+
+<details>
+
+<summary>Possible Solution</summary>
+
+$\mu = 150.8$
+
+$\sigma = 8.8$
+
+$x = 155$
+
+$z = \frac{x - \mu}{\sigma} = \frac{155 - 150.8}{8.8} = 0.477273$
+
+The $z$-score corresponding to Dianne's score of 155 is $z = 0.477$.
+
+</details>
+
+<!--- Adapted from Lesson 7 Prep Quiz --->
+
+<!--- Winter 2023 Computation Practice #1 --->
