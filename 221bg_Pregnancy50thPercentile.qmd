@@ -1,0 +1,41 @@
+---
+title: "Pregnancy 50th Percentile"
+---
+
+The length of human pregnancies from conception to birth is normally distributed with mean 266 days and a standard deviation of 16 days. Find the 50th percentile.
+
+<details>
+
+<summary>Possible Solution</summary>
+
+$\mu = 266$
+
+$\sigma = 16$
+
+**Normal Probability Applet Information**
+
+To find the $z$-score corresponding to the 50th percentile.
+
+1.  Select all the area to the left.
+2.  Type 0.5 in the Area box.
+3.  Read the $z$-score from either box (right box or left box, they are the same).
+
+![](fig_50th_percentile.png)
+
+With 50% of the area to the left, the $z$-score is 0.
+
+``` excel
+=NORM.S.INV(0.5)
+```
+
+$z = 0$
+
+$\begin{align*} x &= \mu + z\sigma \\ &= 266 + (0)16 \\ &= 266\end{align*}$
+
+The 50th percentile is 266 days ($x = 266$).
+
+The median is 266 days.
+
+</details>
+
+<!--- Adpated from the 80th percentile problem above. --->
