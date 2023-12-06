@@ -4,7 +4,7 @@
     "href": "resources.html",
     "title": "Resources",
     "section": "",
-    "text": "My Favorite Resources\n\nCurrent Courses (Winter 2024)\n\n[Math 119]()\n[Math 112]()\n[Math 221A]()\n\nClass Notes\n\n112 Wiki\n119 Wiki\n\nBen’s 119 Wiki\n\n221 “Daily” Computation Practice\n\n221 Wiki\n\n301 Wiki\n\nBen’s 301 Wiki\n\n\nStatistics\n\nBYU-Idaho’s Normal Probability Applet\nBYU-Idaho’s Students’s t Probability Applet\nBYU-Idaho’s Math 221 Textbook"
+    "text": "My Favorite Resources\n\nCurrent Courses (Winter 2024)\n\nMath 119\nMath 112\nMath 221A\n\nClass Notes\n\n112 Wiki\n119 Wiki\n\nBen’s 119 Wiki\n\n221 “Daily” Computation Practice\n\n221 Wiki\n\n301 Wiki\n\nBen’s 301 Wiki\n\n\nStatistics\n\nBYU-Idaho’s Normal Probability Applet\nBYU-Idaho’s Students’s t Probability Applet\nBYU-Idaho’s Math 221 Textbook"
   },
   {
     "objectID": "Week1.html",
@@ -88,7 +88,7 @@
     "href": "QuestionList.html#z-score-calculations-1",
     "title": "Question List",
     "section": "\\(Z\\)-Score Calculations",
-    "text": "\\(Z\\)-Score Calculations\n\nVariable \\(\\hat{P}\\)\n\nProblem: Soccer\nJohn is a soccer player. He knows that he scores a goal 60% of the time. What is the \\(z\\)-score corresponding to John scoring 51 of 78 attempted goals?\n\n\nPossible Solution\n\n\\(p = 0.6\\)\n\\(x = 51\\)\n\\(n = 78\\)\n\\(\\hat{p} = \\frac{x}{n} = \\frac{51}{78} = 0.653846\\)\n\\(\\begin{align*} z &= \\frac{\\hat{p} - p}{\\sqrt{\\frac{p(1-p)}{n}}} \\\\  &= \\frac{(51/78) - 0.6}{\\sqrt{\\frac{0.6(0.4)}{78}}} \\\\  &= 0.970725 \\end{align*}\\)\nThe \\(z\\)-score corresponding to John scoring 51 of 78 attempted goals is \\(z = 0.971\\)."
+    "text": "\\(Z\\)-Score Calculations\n\nVariable \\(\\hat{P}\\)\n\nProblem: Soccer\nJohn is a soccer player. He knows that he scores a goal 60% of the time. What is the \\(z\\)-score corresponding to John scoring 51 of 78 attempted goals?\n\n\nPossible Solution\n\n\\(p = 0.6\\)\n\\(x = 51\\)\n\\(n = 78\\)\n\\(\\hat{p} = \\frac{x}{n} = \\frac{51}{78} = 0.653846\\)\n\\(\\begin{align*} z &= \\frac{\\hat{p} - p}{\\sqrt{\\frac{p(1-p)}{n}}} \\\\ &= \\frac{(51/78) - 0.6}{\\sqrt{\\frac{0.6(0.4)}{78}}} \\\\ &= 0.970725 \\end{align*}\\)\nThe \\(z\\)-score corresponding to John scoring 51 of 78 attempted goals is \\(z = 0.971\\)."
   },
   {
     "objectID": "QuestionList.html#probability-calculations-1",

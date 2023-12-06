@@ -1080,7 +1080,7 @@ Note: Some calculations for Lesson 7 are the calculations used in Lesson 9.
 
     ![](fig_ReadingSpeed.png)
 
-    ``` Excel
+    ``` excel
     =1-NORM.S.DIST(0.5,TRUE)
     ```
 
@@ -1126,7 +1126,7 @@ Note: Some calculations for Lesson 7 are the calculations used in Lesson 9.
 
     $P(\overline{X} < 3.6) = P(Z<1.195) = 0.8840$
 
-    ``` Excel
+    ``` excel
     =NORM.DIST(3.6, 3.5, 0.7/SQRT(70), TRUE)
     ```
 
@@ -1188,7 +1188,7 @@ Note: Some calculations for Lesson 7 are the calculations used in Lesson 9.
 
     $P(\overline{X} <93) = P(Z < 0.52) = 0.6985$
 
-    ``` Excel
+    ``` excel
     =NORM.DIST(93, 90, 10/SQRT(3), TRUE)
     ```
 
@@ -1377,11 +1377,7 @@ Note: Some calculations for Lesson 16 are the calculations used in Lesson 17.
     $n = 78$
 
     $\hat{p} = \frac{x}{n} = \frac{51}{78} = 0.653846$\
-    $\begin{align*}
-    z &= \frac{\hat{p} - p}{\sqrt{\frac{p(1-p)}{n}}} \\
-      &= \frac{(51/78) - 0.6}{\sqrt{\frac{0.6(0.4)}{78}}} \\
-      &= 0.970725
-    \end{align*}$
+    $\begin{align*} z &= \frac{\hat{p} - p}{\sqrt{\frac{p(1-p)}{n}}} \\  &= \frac{(51/78) - 0.6}{\sqrt{\frac{0.6(0.4)}{78}}} \\  &= 0.970725 \end{align*}$
 
     The $z$-score corresponding to John scoring 51 of 78 attempted goals is $z = 0.971$.
 
@@ -1423,7 +1419,7 @@ Note: Some calculations for Lesson 16 are the calculations used in Lesson 17.
 
     $P(\hat{P} > 0.38) = P(Z > -2.01989) = 0.9783$
 
-    ``` Excel
+    ``` excel
     =1-NORM.DIST(0.38,0.43,SQRT(0.43*(1-0.43)/400),TRUE)
     ```
 
@@ -1435,9 +1431,8 @@ Note: Some calculations for Lesson 16 are the calculations used in Lesson 17.
 
     <!--- Winter 2023 Computation Practice #8  --->
 
-```{=html}
 <!-- -->
-```
+
 -   [ ] **Problem:** Stock Market
 
     You take a simple random sample of 200 adults from a town in the Western United States to determine the proportion of those in town who invest in the stock market. Assume the unknown population proportion or percentage of people in town who invest in the stock market is (or 30%). What is the probability that more than 25% of those in such a survey would have invested in the stock market?
@@ -1466,7 +1461,7 @@ Note: Some calculations for Lesson 16 are the calculations used in Lesson 17.
 
     $P(\hat{P} > 0.25) = P(Z > -1.543) = 0.9386$
 
-    ``` Excel
+    ``` excel
     =1-NORM.DIST(0.25,0.3,SQRT(0.3*(0.7)/200),TRUE)
     ```
 
@@ -1500,9 +1495,9 @@ Note: Some calculations for Lesson 16 are the calculations used in Lesson 17.
 
     $\hat{p} = \frac{x}{n} = \frac{97}{785} = 0.123567$
 
-    $z = \frac{\hat{p} - p}{\sqrt{\frac{p(1-p)}{n}}} =  \frac{\frac{97}{785} - 0.15}{\sqrt{\frac{0.15(1-0.15)}{785}}} = -2.07409$
+    $z = \frac{\hat{p} - p}{\sqrt{\frac{p(1-p)}{n}}} = \frac{\frac{97}{785} - 0.15}{\sqrt{\frac{0.15(1-0.15)}{785}}} = -2.07409$
 
-    ``` Excel
+    ``` excel
     =((97/785) - 0.15)/SQRT(0.15*(1-0.15)/785)
     ```
 
@@ -1518,7 +1513,7 @@ Note: Some calculations for Lesson 16 are the calculations used in Lesson 17.
 
     $P(X < 97) = P(\hat{P} < 0.124) = P(Z < -2.074) = 0.0190$
 
-    ``` Excel
+    ``` excel
     =NORM.DIST(97/785, 0.15, SQRT(0.15*(1-0.15)/785), TRUE)
     ```
 

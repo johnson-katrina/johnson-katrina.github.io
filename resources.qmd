@@ -7,11 +7,11 @@ toc: false
 
 -   Current Courses (Winter 2024)
 
-    -   \[Math 119\]()
+    -   [Math 119](https://byui.instructure.com/courses/271180)
 
-    -   \[Math 112\]()
+    -   [Math 112](https://byui.instructure.com/courses/271146)
 
-    -   \[Math 221A\]()
+    -   [Math 221A](https://byui.instructure.com/courses/271338)
 
 -   Class Notes
 
