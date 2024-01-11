@@ -7,7 +7,7 @@ toc: false
 
 Research shows that Retrieval Practice and Interleaved Practice are beneficial to building knowledge. Here is a collection of cumulative review sets for practicing some of the computations and skills I have noticed many Math 221 students could benefit from additional regular practice.
 
-Week 1
+[Week 1](Week1.html)
 
 Week 2
 

@@ -1,7 +1,3 @@
----
-title: "Probability Rules Error Identification"
----
-
 What's wrong with the statement, "There is a 1.2 probability of snow in January in Rexburg"?
 
 <details>

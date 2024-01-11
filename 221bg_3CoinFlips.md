@@ -1,7 +1,3 @@
----
-title: "3 Coin Flips"
----
-
 If you flip a fair coin 3 times you could get either 0, 1, 2, or 3 heads with the following probabilities.
 
 | 0 Heads       | 1 Head | 2 Heads       | 3 Heads       |

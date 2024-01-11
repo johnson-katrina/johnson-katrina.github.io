@@ -2,15 +2,29 @@
 title: "Week 1 Computation Practice"
 ---
 
-\-\-\-\-\-\--
+-------
 
 <details>
 
 <summary>Problem Set 1</summary>
 
+<br>
+
+{{< include 221bg_ProbabilityRulesErrorIdentification.md >}}
+
+<br>
+
+---
+
+{{< include 221bg_Tokens.md >}}
+
+---
+
+{{< include 221bg_3CoinFlips.md >}}
+
 </details>
 
-\-\-\-\-\-\--
+-------
 
 <details>
 
@@ -18,9 +32,9 @@ title: "Week 1 Computation Practice"
 
 </details>
 
-\-\-\-\-\-\--
+-------
 
-\-\-\-\-\-\--
+-------
 
 <details>
 
@@ -28,4 +42,4 @@ title: "Week 1 Computation Practice"
 
 </details>
 
-\-\-\-\-\-\--
+-------

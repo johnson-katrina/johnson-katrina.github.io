@@ -1,7 +1,3 @@
----
-title: "Tokens"
----
-
 A box of tokens contains 8 blue tokens, 6 red tokens, and 4 yellow tokens.
 
 If a token is selected at random from the box, what is the probability that the token is blue?

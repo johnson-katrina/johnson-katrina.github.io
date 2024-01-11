@@ -13,7 +13,7 @@ As the problems are selected the box can be checked and a note can indicate whic
 
 -   [ ] **Problem:** Probability Rules Error Identification
 
-    {{< include 221bg_ProbabilityRulesErrorIdentification.qmd >}}
+    {{< include 221bg_ProbabilityRulesErrorIdentification.md >}}
 
 -   [ ] **Problem:** Snow in May
 
@@ -21,7 +21,7 @@ As the problems are selected the box can be checked and a note can indicate whic
 
 -   [ ] **Problem:** Tokens
 
-    {{< include 221bg_Tokens.qmd >}}
+    {{< include 221bg_Tokens.md >}}
 
 -   [ ] **Problem:** Blood Type
 
@@ -29,7 +29,7 @@ As the problems are selected the box can be checked and a note can indicate whic
 
 -   [ ] **Problem:** 3 Coin Flips
 
-    {{< include 221bg_3CoinFlips.qmd >}}
+    {{< include 221bg_3CoinFlips.md >}}
 
 # After Lessons 3 and 4
 
@@ -87,23 +87,20 @@ Assign Problem 1-3 on the day of Lesson 5. I think the students should have enou
 
     {{< include 221bg_EmpiricalRuleProblem1.qmd >}}
 
-```{=html}
 <!-- -->
-```
+
 -   [ ] **Problem:** 68-95-99.7 Rule Problem 2
 
     {{< include 221bg_EmpiricalRuleProblem2.qmd >}}
 
-```{=html}
 <!-- -->
-```
+
 -   [ ] **Problem:** 68-95-99.7 Rule Problem 3
 
     {{< include 221bg_EmpiricalRuleProblem3.qmd >}}
 
-```{=html}
 <!-- -->
-```
+
 -   [ ] **Problem:** 68-95-99.7 Rule Problem 4
 
     {{< include 221bg_EmpiricalRuleProblem4.qmd >}}
