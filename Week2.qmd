@@ -1,0 +1,31 @@
+---
+title: "Week2"
+---
+
+<details>
+
+<summary>Problem Set 1</summary>
+
+{{< include 221bg_SnowInMay.md >}}
+
+---
+
+{{< include 221bg_ComparingMeanAndMedian.md >}}
+
+</details>
+
+------------------------------------------------------------------------
+
+<details>
+
+<summary>Problem Set 2</summary>
+
+</details>
+
+------------------------------------------------------------------------
+
+<details>
+
+<summary>Problem Set 3</summary>
+
+</details>

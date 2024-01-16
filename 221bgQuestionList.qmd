@@ -17,7 +17,7 @@ As the problems are selected the box can be checked and a note can indicate whic
 
 -   [ ] **Problem:** Snow in May
 
-    {{< include 221bg_SnowInMay.qmd >}}
+    {{< include 221bg_SnowInMay.md >}}
 
 -   [ ] **Problem:** Tokens
 
@@ -37,7 +37,7 @@ As the problems are selected the box can be checked and a note can indicate whic
 
 -   [ ] **Problem:** Comparing Mean and Median
 
-    {{< include 221bg_ComparingMeanAndMedian.qmd >}}
+    {{< include 221bg_ComparingMeanAndMedian.md >}}
 
 It might help students make the distinction between percentiles from a distribution verses sample percentiles if several problem sets include percentile
 

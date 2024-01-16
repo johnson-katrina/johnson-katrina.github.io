@@ -1,7 +1,3 @@
----
-title: "Comparing Mean and Median"
----
-
 -   Consider the following data set 6, 58, 100.
 
     -   Calculate the mean.

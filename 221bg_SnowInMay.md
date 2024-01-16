@@ -1,8 +1,4 @@
----
-title: "Snow in May"
----
-
-Suppose the probability of snow in Rexburg in May is 0.79. What is the probability that there will be no snow in Rexburg in May?
+Suppose the probability of snow in Rexburg in May is 0.79. What is the probability of no snow in Rexburg in May?
 
 <details>
 

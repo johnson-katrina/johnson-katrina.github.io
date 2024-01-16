@@ -9,7 +9,7 @@ Research shows that Retrieval Practice and Interleaved Practice are beneficial t
 
 [Week 1](Week1.html)
 
-Week 2
+[Week 2](Week2.html)
 
 Week 3
 
