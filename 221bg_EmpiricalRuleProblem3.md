@@ -1,7 +1,3 @@
----
-title: "68-95-99.7 Rule Problem 3"
----
-
 -   Use the 68-95-99.7 rule to calculate the approximate area from $z = -3$ to $z=0$.
 
     <details>

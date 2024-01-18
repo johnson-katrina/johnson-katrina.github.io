@@ -8,7 +8,7 @@ title: "Week2"
 
 {{< include 221bg_SnowInMay.md >}}
 
----
+------------------------------------------------------------------------
 
 {{< include 221bg_ComparingMeanAndMedian.md >}}
 
@@ -22,7 +22,15 @@ title: "Week2"
 
 </details>
 
+{{< include 221bg_EmpiricalRuleProblem1.md >}}
+
 ------------------------------------------------------------------------
+
+{{< include 221bg_EmpiricalRuleProblem2.md >}}
+
+---
+
+{{< include 221bg_EmpiricalRuleProblem3.md >}}
 
 <details>
 

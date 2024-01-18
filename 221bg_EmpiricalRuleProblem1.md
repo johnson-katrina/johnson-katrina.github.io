@@ -1,7 +1,3 @@
----
-title: "68-95-99.7 Rule Problem 1"
----
-
 -   Use the 68-95-99.7 rule to calculate the approximate area from $z = -1$ to $z=0$. *Remember the normal distribution is symmetric.*
 
     <details>
