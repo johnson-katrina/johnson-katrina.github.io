@@ -28,9 +28,9 @@ title: "Week2"
 
 {{< include 221bg_EmpiricalRuleProblem2.md >}}
 
----
+------------------------------------------------------------------------
 
-{{< include 221bg_EmpiricalRuleProblem3=.md >}}
+{{< include 221bg_EmpiricalRuleProblem3.md >}}
 
 <details>
 
