@@ -1,7 +1,3 @@
----
-title: "Pregnancy 20th Percentile"
----
-
 The length of human pregnancies from conception to birth is normally distributed with mean 266 days and a standard deviation of 16 days. Find the 20th percentile.
 
 <details>

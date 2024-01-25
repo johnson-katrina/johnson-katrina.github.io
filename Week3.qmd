@@ -1,0 +1,45 @@
+---
+title: "Week 3"
+---
+
+<details>
+
+<summary>Problem Set 1</summary>
+
+1\.
+
+{{< include 221bg_WaitTimes40thPercentile.md >}}
+
+2\.
+
+{{< include 221bg_Pregnancy20thPercentile.md >}}
+
+3\.
+
+{{< include 221bg_EmpiricalRuleProblem5.md >}}
+
+4\.
+
+{{< include 221bg_ReadingSpeed.md >}}
+
+5\.
+
+{{< include 221bg_ReadingSpeed_Take2.md >}}
+
+</details>
+
+------------------------------------------------------------------------
+
+<details>
+
+<summary>Problem Set 2</summary>
+
+</details>
+
+<details>
+
+------------------------------------------------------------------------
+
+<summary>Problem Set 3</summary>
+
+</details>

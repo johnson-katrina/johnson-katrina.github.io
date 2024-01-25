@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>K Johnson – bg_waittimes40thpercentile</title>
+<title>K Johnson – bg_gpa1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -60,6 +60,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -108,15 +110,27 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>Use the <a href="https://tinyurl.com/M221-dist-shapes">data from tinyurl.com/M221-dist-shapes</a> to calculate the 40th percentile of wait times.</p>
+<p>Suppose the mean GPA of BYU-Idaho students is 3.5 and the standard deviation is 0.7. It is well known that this distribution is left-skewed. What is the probability that a random sample of 70 students will have a mean GPA less than 3.6?</p>
 <details>
 <summary>
 Possible Solution
 </summary>
-<pre class="excel"><code>=PERCENTILE(C:C,0.4)</code></pre>
-<p>The 40th percentile of wait times is 1.8.</p>
+<p><span class="math inline">\(\mu = 3.5\)</span></p>
+<p><span class="math inline">\(\sigma = 0.7\)</span></p>
+<p><span class="math inline">\(n = 70\)</span></p>
+<p><span class="math inline">\(\overline{x} = 3.6\)</span></p>
+<p><span class="math inline">\(z = \frac{\overline{x} - \mu}{\frac{\sigma}{\sqrt{n}}} = \frac{3.6 - 3.5}{\frac{0.7}{\sqrt{70}}} = 1.19523\)</span></p>
+<p>Normal Probability Applet Information</p>
+<p>To find the probability corresponding to a <span class="math inline">\(z\)</span>-score.</p>
+<p>Shade the side of interest.</p>
+<p>Type the <span class="math inline">\(z\)</span>-score in the box (negative value the left box and positive values the right box).</p>
+<p>Read the probability from the area box.</p>
+<p><span class="math inline">\(P(\overline{X} &lt; 3.6) = P(Z&lt;1.195) = 0.8840\)</span></p>
+<p>=NORM.DIST(3.6, 3.5, 0.7/SQRT(70), TRUE)</p>
+<p>The probability a randomly selected sample of 70 students will have a mean GPA less than 3.6 is 0.884.</p>
 </details>
-<!--- Adpated from the Sugar Sack weights problem above. --->
+<!--- Adapted from Lesson 7 Prep Quiz --->
+<!--- Winter 2023 Computation Practice #13 --->
 
 
 

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>K Johnson – bg_waittimes40thpercentile</title>
+<title>K Johnson – bg_gpa2</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -60,6 +60,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -108,15 +110,16 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>Use the <a href="https://tinyurl.com/M221-dist-shapes">data from tinyurl.com/M221-dist-shapes</a> to calculate the 40th percentile of wait times.</p>
+<p>Calculate the probability, if possible. If it is not possible to compute the probability explain why not.</p>
+<p>Suppose the mean GPA of BYU-Idaho students is 3.5 and the standard deviation is 0.7. It is well known that this distribution is left-skewed. What is the probability that a random sample of 17 students will have a mean GPA less than 3.2?</p>
 <details>
 <summary>
 Possible Solution
 </summary>
-<pre class="excel"><code>=PERCENTILE(C:C,0.4)</code></pre>
-<p>The 40th percentile of wait times is 1.8.</p>
+<p>We know <span class="math inline">\(\overline{X}\)</span> is not normally distributed since <span class="math inline">\(n=17\)</span> and the population (of GPAs) is left-skewed. So we cannot calculate this probability!</p>
 </details>
-<!--- Adpated from the Sugar Sack weights problem above. --->
+<!--- Adapted from Lesson 7 Prep Quiz --->
+<!--- Adapted from Winter 2023 Computation Practice #14a --->
 
 
 

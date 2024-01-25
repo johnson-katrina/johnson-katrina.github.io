@@ -53,7 +53,9 @@ It might help students make the distinction between percentiles from a distribut
 
 -   [ ] **Problem:** Pregnancy 20th Percentile
 
-    {{< include 221bg_Pregnancy20thPercentile.qmd >}}
+    Week 3, Problem Set 1
+
+    {{< include 221bg_Pregnancy20thPercentile.md >}}
 
 -   [ ] **Problem:** Pregnancy 25th Percentile
 
@@ -71,7 +73,9 @@ It might help students make the distinction between percentiles from a distribut
 
 -   [ ] **Problem:** Wait Times 40th percentile
 
-    {{< include 221bg_WaitTimes40thPercentile.qmd >}}
+    Week 3, Problem Set 1
+
+    {{< include 221bg_WaitTimes40thPercentile.md >}}
 
 -   [ ] **Problem:** Test Scores 95 percentile
 
@@ -106,6 +110,8 @@ Assign Problem 1-3 on the day of Lesson 5. I think the students should have enou
     {{< include 221bg_EmpiricalRuleProblem4.md >}}
 
 -   [ ] **Problem:** 68-95-99.7 Rule Problem 5
+
+    Week 3, Problem Set 1
 
     {{< include 221bg_EmpiricalRuleProblem5.md >}}
 
@@ -145,6 +151,8 @@ Note: Some calculations for Lesson 7 are the calculations used in Lesson 9.
 
 -   [ ] **Problem:** Reading Speed
 
+    Week 3, Problem Set 1
+
     {{< include 221bg_ReadingSpeed.md >}}
 
 ### Variable $\overline{X}$
@@ -158,6 +166,8 @@ Note: Some calculations for Lesson 7 are the calculations used in Lesson 9.
     {{< include 221bg_GPA2.md >}}
 
 -   [ ] **Problem:** Reading Speed (Take 2)
+
+    Week 3, Problem Set 1
 
     {{< include 221bg_ReadingSpeed_Take2.md >}}
 

@@ -1,7 +1,3 @@
----
-title: "Wait Times 40th percentile"
----
-
 Use the [data from tinyurl.com/M221-dist-shapes](https://tinyurl.com/M221-dist-shapes) to calculate the 40th percentile of wait times.
 
 <details>
