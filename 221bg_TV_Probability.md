@@ -1,7 +1,3 @@
----
-title: "TV (Problability)"
----
-
 The amount of time Americans spend watching television is closely monitored by A.C. Nielsen because this helps to determine advertising pricing for commercials. It is known the distribution of time Americans watch television is right skewed, with a mean of 2.35 hours per day and a standard deviation of 1.93 (Sullivan, pp. 440). What is the probability that a random sample of 70 Americans has a mean TV viewing time greater than 1 hour per day?
 
 <details>

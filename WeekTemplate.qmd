@@ -1,0 +1,25 @@
+---
+title: "Week Template"
+---
+
+<details>
+
+<summary>Problem Set 1</summary>
+
+</details>
+
+------------------------------------------------------------------------
+
+<details>
+
+<summary>Problem Set 2</summary>
+
+</details>
+
+------------------------------------------------------------------------
+
+<details>
+
+<summary>Problem Set 3</summary>
+
+</details>

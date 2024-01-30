@@ -1,0 +1,37 @@
+---
+title: "Week 4"
+---
+
+<details>
+
+<summary>Problem Set 1</summary>
+
+1\.
+
+{{< include 221bg_TV_Probability.md >}}
+
+2\.
+
+{{< include 221bg_Pregnancy90thPercentile.md >}}
+
+</details>
+
+------------------------------------------------------------------------
+
+<details>
+
+<summary>Problem Set 2</summary>
+
+1\.
+
+{{< include 221bg_PH_ProbabilityAndHypothesisTest.md >}}
+
+</details>
+
+------------------------------------------------------------------------
+
+<details>
+
+<summary>Problem Set 3</summary>
+
+</details>

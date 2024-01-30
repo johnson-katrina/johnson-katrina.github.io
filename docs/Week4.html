@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>K Johnson – bg_tv_probability</title>
+<title>K Johnson - Week 4</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -108,8 +108,28 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content column-page" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Week 4</h1>
+</div>
 
 
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<details>
+<summary>
+Problem Set 1
+</summary>
+<p>1.</p>
 <p>The amount of time Americans spend watching television is closely monitored by A.C. Nielsen because this helps to determine advertising pricing for commercials. It is known the distribution of time Americans watch television is right skewed, with a mean of 2.35 hours per day and a standard deviation of 1.93 (Sullivan, pp.&nbsp;440). What is the probability that a random sample of 70 Americans has a mean TV viewing time greater than 1 hour per day?</p>
 <details>
 <summary>
@@ -132,6 +152,110 @@ Possible Solution
 <p><span class="math inline">\(P(\overline{X} &gt; 1) = P(Z&gt;-5.852) \approx 1\)</span></p>
 <pre class="excel"><code>=NORM.DIST(1,2.35,1.93/SQRT(70),TRUE)</code></pre>
 <p>The probability that the mean TV viewing time for a sample of 70 Americans is greater than 1 hour per day is very close to 1. (Note: This is a p-value, one tailed.)</p>
+</details>
+<p>2.</p>
+<p>The length of human pregnancies from conception to birth is normally distributed with mean 266 days and a standard deviation of 16 days. Find the 90th percentile.</p>
+<details>
+<summary>
+Possible Solution
+</summary>
+<p><span class="math inline">\(\mu = 266\)</span></p>
+<p><span class="math inline">\(\sigma = 16\)</span></p>
+<p><strong>Normal Probability Applet Information</strong></p>
+<p>To find the <span class="math inline">\(z\)</span>-score corresponding to the 90th percentile.</p>
+<ol type="1">
+<li>Select all the area to the left.</li>
+<li>Type 0.9 in the Area box.</li>
+<li>Read the <span class="math inline">\(z\)</span>-score from the right box.</li>
+</ol>
+<p><img src="fig_90th_percentile.png" class="img-fluid"></p>
+<p>With 90% of the area to the left, the <span class="math inline">\(z\)</span>-score is 1.282.</p>
+<p><span class="math inline">\(z = 1.282\)</span></p>
+<p><span class="math inline">\(\begin{align*} x &amp;= \mu + z\sigma \\ &amp;= 266 + 1.282(16) \\ &amp;= 286.512\end{align*}\)</span></p>
+<p>The 90th percentile is 286.5 days (<span class="math inline">\(x = 286.5\)</span>).</p>
+<pre class="excel"><code>=NORM.INV(.9,266,16)</code></pre>
+</details>
+<!--- Adpated from the 80th percentile problem above. --->
+</details>
+<hr>
+<details>
+<summary>
+Problem Set 2
+</summary>
+<p>1.</p>
+<p>Part (a)</p>
+<p>In a manufacturing facility, the pH of a solution must be carefully monitored. Historically, the pH values have been normally distributed with mean 3.25 and standard deviation 0.08. Find the probability that on the next test the pH of the solution will be less than 3.32.</p>
+<details>
+<summary>
+Possible Solution
+</summary>
+<p><span class="math inline">\(\mu = 3.25\)</span></p>
+<p><span class="math inline">\(\sigma = 0.08\)</span></p>
+<p><span class="math inline">\(x = 3.32\)</span></p>
+<p><span class="math inline">\(z = \frac{x - \mu}{\sigma} = \frac{3.32 - 3.25}{0.08} = 0.875\)</span></p>
+<p><strong>Normal Probability Applet Information</strong></p>
+<p>To find the probability corresponding to a <span class="math inline">\(z\)</span>-score.</p>
+<ol type="1">
+<li>Shade the side of interest.</li>
+<li>Type the <span class="math inline">\(z\)</span>-score in the box (negative value the left box and positive values the right box).</li>
+<li>Read the probability from the area box.&nbsp;</li>
+</ol>
+<p><img src="fig_PH.png" class="img-fluid"></p>
+<p><span class="math inline">\(P(X &lt; 3.32) = P(Z &lt; 0.875) = 0.8092\)</span></p>
+<p>The probability that on the next test the pH will be less than 3.32 is 0.809.</p>
+</details>
+<!--- From 221 Course Packet (Lesson 8 #15; Craig's exercises) --->
+<!--- Winter 2023 Computation Practice #10 --->
+<p>Part (b)</p>
+<p>In a manufacturing facility, the pH of a solution must be carefully monitored. Historically, the pH values have been normally distributed with mean 3.25 and standard deviation 0.08. The quality control department wants to test whether the true mean pH is less than 3.25. They will use the next sample to complete this test. The next sample has a pH of 3.32.</p>
+<details>
+<summary>
+Possible Solution
+</summary>
+<p><strong>Null and alternative hypotheses</strong></p>
+<p><span class="math inline">\(H_0: \mu = 3.25\)</span></p>
+<p><span class="math inline">\(H_a: \mu &lt; 3.25\)</span></p>
+<p><strong>Level of significance</strong></p>
+<p><span class="math inline">\(\alpha = 0.05\)</span></p>
+<p><strong>Summary statistics</strong></p>
+<p><span class="math inline">\(x = 3.32\)</span></p>
+<p>Assume <span class="math inline">\(\sigma = 0.08\)</span></p>
+<p><strong>Test statistic</strong><span class="math inline">\(z = \frac{x - \mu}{\sigma} = \frac{3.32-3.25}{0.08} = 0.875\)</span></p>
+<p><em>Note: This is the same as</em> <span class="math inline">\(z = \frac{\overline{x} - \mu}{\frac{\sigma}{\sqrt{n}}} = \frac{3.32 - 3.25}{\frac{0.08}{\sqrt{1}}} = 0.875\)</span><em>.</em></p>
+<p><strong>P-value and comparison to</strong> <span class="math inline">\(\alpha\)</span></p>
+<p>Because the alternative hypothesis is <span class="math inline">\(\mu &lt; 3.25\)</span> we are looking for the probability of being less than the test statistic.</p>
+<p><strong>Normal Probability Applet Information</strong></p>
+<p>To find the probability corresponding to a <span class="math inline">\(z\)</span>-score.</p>
+<ol type="1">
+<li>Shade the side of interest.</li>
+<li>Type the <span class="math inline">\(z\)</span>-score in the box (negative value the left box and positive values the right box).</li>
+<li>Read the probability from the area box.&nbsp;</li>
+</ol>
+<p><img src="fig_PH.png" class="img-fluid"></p>
+<p><span class="math inline">\(P(X &lt; 3.32) = P(Z &lt; 0.875) = 0.8092\)</span></p>
+<p><span class="math inline">\(p\)</span>-value = 0.809 &gt; 0.05 = <span class="math inline">\(\alpha\)</span></p>
+<p><strong>Conclusion</strong></p>
+<p>We <u>fail to reject</u> the null hypothesis.</p>
+<p><strong>English Sentence</strong></p>
+<p>There is <u>insufficient</u> evidence to suggest that the mean pH is less than 3.25.</p>
+</details>
+<!--- Adapted from Winter 2023 Computation Practice # 10 --->
+<!--- Adapted from 221 Course Packet (Lesson 8 #15; Craig's exercises) --->
+<!--- Notice this problem is presented as a probability question and as a hypothesis test question. Give at the same time -- try to help students make the connections. --->
+<p>Part (c)</p>
+<p>Compare the previous two parts. The first part is a probability question. The second part is a hypothesis test question. What similarities do you notice?</p>
+<details>
+<summary>
+Possible Solution
+</summary>
+<p>The probability calculation in the first part is the same calculation in the Test Statistic and p-value calculations of the hypothesis in the second part.</p>
+</details>
+</details>
+<hr>
+<details>
+<summary>
+Problem Set 3
+</summary>
 </details>
 
 
