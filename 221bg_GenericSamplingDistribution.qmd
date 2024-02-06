@@ -1,0 +1,19 @@
+---
+title: "Generic Sampling Distribution"
+---
+
+Calculate the probability, if possible. If it is not possible to compute the probability explain why not.
+
+Given data that are right-skewed, $\mu = 5$, and $\sigma = 2$. What is the probability a random sample of 12 will have a mean greater than 10?
+
+<details>
+
+<summary>Possible Solution</summary>
+
+We know $\overline{X}$ is not normally distributed since $n=12$ and the population is right-skewed. So we **cannot** calculate this probability!
+
+</details>
+
+<!--- Adapted from 221 Course Packet Lesson 7 #5 (Craig's exercises) --->
+
+<!--- Winter 2023 Computation Practice #14c --->

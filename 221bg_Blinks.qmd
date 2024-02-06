@@ -1,0 +1,25 @@
+---
+title: "Blinks"
+---
+
+Suppose you are scientist and you want to use a confidence interval to estimate the true mean number of times a person in your city blinks each day. Find the sample size required to construct a 90% confidence interval with a margin of error 43 blinks for the true mean number of time a person blinks each day. Assume the standard deviation of blinks per day is 1240.
+
+<details>
+
+<summary>Possible Solution</summary>
+
+$z^* = 1.645$ (because we want a confidence level of 90%)
+
+$m = 43$
+
+$\sigma = 1240$
+
+$n = \left(\frac{z^* \sigma}{m}\right)^2 = \left(\frac{(1.645)(1240)}{1240}\right)^2 = 2250.29$
+
+We need a sample size of at least 2251. *Remember to round up to the next integer with sample size calculations.*
+
+</details>
+
+<!--- Adapted from Lesson 17 Hmk Quiz --->
+
+<!--- Winter 2023 Computation Practice #18 --->
