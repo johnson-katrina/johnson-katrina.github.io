@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>K Johnson - Test Scores 95 Percentile</title>
+<title>K Johnson - Blinks</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -60,6 +60,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -108,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Test Scores 95 Percentile</h1>
+<h1 class="title">Blinks</h1>
 </div>
 
 
@@ -123,15 +125,19 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Use the <a href="tinyurl.com/M221-dist-shapes">data from tinyurl.com/M221-dist-shapes</a> to calculate the 95th percentile of test scores.</p>
+<p>Suppose you are scientist and you want to use a confidence interval to estimate the true mean number of times a person in your city blinks each day. Find the sample size required to construct a 90% confidence interval with a margin of error 43 blinks for the true mean number of time a person blinks each day. Assume the standard deviation of blinks per day is 1240.</p>
 <details>
 <summary>
 Possible Solution
 </summary>
-<pre class="excel"><code>=PERCENTILE(A:A,0.95)</code></pre>
-<p>The 95th percentile of test scores is 97.</p>
+<p><span class="math inline">\(z^* = 1.645\)</span> (because we want a confidence level of 90%)</p>
+<p><span class="math inline">\(m = 43\)</span></p>
+<p><span class="math inline">\(\sigma = 1240\)</span></p>
+<p><span class="math inline">\(n = \left(\frac{z^* \sigma}{m}\right)^2 = \left(\frac{(1.645)(1240)}{1240}\right)^2 = 2250.29\)</span></p>
+<p>We need a sample size of at least 2251. <em>Remember to round up to the next integer with sample size calculations.</em></p>
 </details>
-<!--- Adpated from the Sugar Sack weights problem above. --->
+<!--- Adapted from Lesson 17 Hmk Quiz --->
+<!--- Winter 2023 Computation Practice #18 --->
 
 
 

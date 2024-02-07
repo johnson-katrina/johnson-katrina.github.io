@@ -149,7 +149,7 @@
   {
     "objectID": "221bg_TestScores95thPercentile.html",
     "href": "221bg_TestScores95thPercentile.html",
-    "title": "Test Scores 95 percentile",
+    "title": "Test Scores 95 Percentile",
     "section": "",
     "text": "Use the data from tinyurl.com/M221-dist-shapes to calculate the 95th percentile of test scores.\n\n\nPossible Solution\n\n=PERCENTILE(A:A,0.95)\nThe 95th percentile of test scores is 97."
   },
@@ -369,5 +369,26 @@
     "title": "K Johnson",
     "section": "",
     "text": "What’s wrong with the statement, “There is a 1.2 probability of snow in January in Rexburg”?\n\n\nPossible Solution\n\nA probability is a number between 0 and 1, \\(0 \\leq p \\leq 1\\). The probability of snow cannot be 1.2 because \\(1.2 \\nleq 1\\) (rather 1.2 &gt; 1)."
+  },
+  {
+    "objectID": "Week5.html",
+    "href": "Week5.html",
+    "title": "Week 5",
+    "section": "",
+    "text": "Problem Set 1\n\n\n\n\n\nProblem Set 2\n\n\n\n\n\nProblem Set 3"
+  },
+  {
+    "objectID": "221bg_GenericSamplingDistribution.html",
+    "href": "221bg_GenericSamplingDistribution.html",
+    "title": "Generic Sampling Distribution",
+    "section": "",
+    "text": "Calculate the probability, if possible. If it is not possible to compute the probability explain why not.\nGiven data that are right-skewed, \\(\\mu = 5\\), and \\(\\sigma = 2\\). What is the probability a random sample of 12 will have a mean greater than 10?\n\n\nPossible Solution\n\nWe know \\(\\overline{X}\\) is not normally distributed since \\(n=12\\) and the population is right-skewed. So we cannot calculate this probability!"
+  },
+  {
+    "objectID": "221bg_Blinks.html",
+    "href": "221bg_Blinks.html",
+    "title": "Blinks",
+    "section": "",
+    "text": "Suppose you are scientist and you want to use a confidence interval to estimate the true mean number of times a person in your city blinks each day. Find the sample size required to construct a 90% confidence interval with a margin of error 43 blinks for the true mean number of time a person blinks each day. Assume the standard deviation of blinks per day is 1240.\n\n\nPossible Solution\n\n\\(z^* = 1.645\\) (because we want a confidence level of 90%)\n\\(m = 43\\)\n\\(\\sigma = 1240\\)\n\\(n = \\left(\\frac{z^* \\sigma}{m}\\right)^2 = \\left(\\frac{(1.645)(1240)}{1240}\\right)^2 = 2250.29\\)\nWe need a sample size of at least 2251. Remember to round up to the next integer with sample size calculations."
   }
 ]

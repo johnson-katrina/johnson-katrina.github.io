@@ -1,5 +1,5 @@
 ---
-title: "Brain Gain Question List"
+title: Brain Gain Question List
 toc: false
 ---
 

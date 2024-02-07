@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>K Johnson - Test Scores 95 Percentile</title>
+<title>K Johnson - Generic Sampling Distribution</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -60,6 +60,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -108,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Test Scores 95 Percentile</h1>
+<h1 class="title">Generic Sampling Distribution</h1>
 </div>
 
 
@@ -123,15 +125,16 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Use the <a href="tinyurl.com/M221-dist-shapes">data from tinyurl.com/M221-dist-shapes</a> to calculate the 95th percentile of test scores.</p>
+<p>Calculate the probability, if possible. If it is not possible to compute the probability explain why not.</p>
+<p>Given data that are right-skewed, <span class="math inline">\(\mu = 5\)</span>, and <span class="math inline">\(\sigma = 2\)</span>. What is the probability a random sample of 12 will have a mean greater than 10?</p>
 <details>
 <summary>
 Possible Solution
 </summary>
-<pre class="excel"><code>=PERCENTILE(A:A,0.95)</code></pre>
-<p>The 95th percentile of test scores is 97.</p>
+<p>We know <span class="math inline">\(\overline{X}\)</span> is not normally distributed since <span class="math inline">\(n=12\)</span> and the population is right-skewed. So we <strong>cannot</strong> calculate this probability!</p>
 </details>
-<!--- Adpated from the Sugar Sack weights problem above. --->
+<!--- Adapted from 221 Course Packet Lesson 7 #5 (Craig's exercises) --->
+<!--- Winter 2023 Computation Practice #14c --->
 
 
 
