@@ -81,7 +81,9 @@ It might help students make the distinction between percentiles from a distribut
 
 -   [ ] **Problem:** Test Scores 95 percentile
 
-    {{< include 221bg_TestScores95thPercentile.qmd >}}
+    Week 5, Problem Set 2
+
+    {{< include 221bg_TestScores95thPercentile.md >}}
 
 # After Lesson 5
 
@@ -145,7 +147,9 @@ Note: Some calculations for Lesson 7 are the calculations used in Lesson 9.
 
 -   [ ] **Problem:** Date Money
 
-    {{< include 221bg_DateMoney_zscore.qmd >}}
+    Week 5, Problem Set 2
+
+    {{< include 221bg_DateMoney_zscore.md >}}
 
 ## Probability Calculations
 

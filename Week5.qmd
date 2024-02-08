@@ -14,6 +14,12 @@ title: "Week 5"
 
 <summary>Problem Set 2</summary>
 
+{{< include 221bg_TestScores95thPercentile.md >}}
+
+------------------------------------------------------------------------
+
+{{< include 221bg_DateMoney_zscore.md >}}
+
 </details>
 
 ------------------------------------------------------------------------

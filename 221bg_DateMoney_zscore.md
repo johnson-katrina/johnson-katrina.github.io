@@ -1,7 +1,3 @@
----
-title: "Date Money (z-score)"
----
-
 Assume that the amount of money BYU-Idaho students spend on a date is right-skewed with a mean of \$16 and a standard deviation of \$20. What is the $z$-score corresponding to a random sample of 45 BYU-Idaho students with a mean of \$10 spent on their last date?
 
 <details>

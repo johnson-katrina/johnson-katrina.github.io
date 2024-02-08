@@ -60,6 +60,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -133,6 +135,30 @@ Problem Set 1
 <summary>
 Problem Set 2
 </summary>
+<p>Use the data from <strong>tinyurl.com/M221-dist-shapes</strong> to calculate the 95th percentile of test scores.</p>
+<details>
+<summary>
+Possible Solution
+</summary>
+<pre class="excel"><code>=PERCENTILE(A:A,0.95)</code></pre>
+<p>The 95th percentile of test scores is 97.</p>
+</details>
+<!--- Adpated from the Sugar Sack weights problem above. --->
+<hr>
+<p>Assume that the amount of money BYU-Idaho students spend on a date is right-skewed with a mean of $16 and a standard deviation of $20. What is the <span class="math inline">\(z\)</span>-score corresponding to a random sample of 45 BYU-Idaho students with a mean of $10 spent on their last date?</p>
+<details>
+<summary>
+Possible Solution
+</summary>
+<p><span class="math inline">\(\mu = 16\)</span></p>
+<p><span class="math inline">\(\sigma = 20\)</span></p>
+<p><span class="math inline">\(n = 45\)</span></p>
+<p><span class="math inline">\(\overline{x} = 10\)</span></p>
+<p><span class="math inline">\(z = \frac{\overline{x} - \mu}{\frac{\sigma}{\sqrt{n}}} = \frac{10-16}{\frac{20}{\sqrt{45}}} = -2.01246\)</span></p>
+<p>The <span class="math inline">\(z\)</span>-score corresponding to a reandom sample of 45 BYU-Idaho students with a mean of $10 spent on their last date is <span class="math inline">\(z = -2.012\)</span>.</p>
+</details>
+<!--- From 221 Course Packet (Lesson 7 #4; Craig's exercises) --->
+<!--- Winter 2023 Computation Practice #2 --->
 </details>
 <hr>
 <details>

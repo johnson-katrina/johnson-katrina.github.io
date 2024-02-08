@@ -1,8 +1,4 @@
----
-title: "Test Scores 95 Percentile"
----
-
-Use the [data from tinyurl.com/M221-dist-shapes](tinyurl.com/M221-dist-shapes) to calculate the 95th percentile of test scores.
+Use the data from **tinyurl.com/M221-dist-shapes** to calculate the 95th percentile of test scores.
 
 <details>
 
