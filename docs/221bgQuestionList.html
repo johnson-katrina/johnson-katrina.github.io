@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -45,7 +45,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -54,6 +60,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -63,6 +70,33 @@ ul.task-list li input[type="checkbox"] {
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -70,9 +104,9 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">K Johnson</span>
     </a>
@@ -84,17 +118,17 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
- <span class="menu-text">Home</span></a>
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resources.html" rel="" target="">
- <span class="menu-text">Resources</span></a>
+    <a class="nav-link" href="./resources.html"> 
+<span class="menu-text">Dr.&nbsp;Katrina Johnson</span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -113,7 +147,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -121,7 +155,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <p>This list of problems focus on computations and concepts that students have a tendency of mixing up or need additional practice. These problems are intended the to be used as interleaved retrievel practice at the beginning of class to keep the concepts fresh in students minds throughout the semester.</p>
 <p>As the problems are selected the box can be checked and a note can indicate which week/day it was used. It is probably okay to use problems more than once as long as there is some time between uses.</p>
@@ -130,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="probability-rules" class="level2">
 <h2 class="anchored" data-anchor-id="probability-rules">Probability Rules</h2>
 <ul class="task-list">
-<li><input type="checkbox"><strong>Problem:</strong> Probability Rules Error Identification</li>
+<li><label><input type="checkbox"><strong>Problem:</strong> Probability Rules Error Identification</label></li>
 </ul>
 <p>What’s wrong with the statement, “There is a 1.2 probability of snow in January in Rexburg”?</p>
 <details>
@@ -141,7 +177,7 @@ Possible Solution
 </details>
 <!--- From my 221 Wiki April 21, 2021 --->
 <ul class="task-list">
-<li><input type="checkbox"><strong>Problem:</strong> Snow in May</li>
+<li><label><input type="checkbox"><strong>Problem:</strong> Snow in May</label></li>
 </ul>
 <p>Suppose the probability of snow in Rexburg in May is 0.79. What is the probability of no snow in Rexburg in May?</p>
 <details>
@@ -153,7 +189,7 @@ Possible Solution
 </details>
 <!--- From my 221 Wiki April 21, 2021--->
 <ul class="task-list">
-<li><input type="checkbox"><strong>Problem:</strong> Tokens</li>
+<li><label><input type="checkbox"><strong>Problem:</strong> Tokens</label></li>
 </ul>
 <p>A box of tokens contains 8 blue tokens, 6 red tokens, and 4 yellow tokens.</p>
 <p>If a token is selected at random from the box, what is the probability that the token is blue?</p>
@@ -175,11 +211,11 @@ Possible Solution
 <section id="section" class="level2">
 <h2 class="anchored" data-anchor-id="section"><!--- From my 221 Wiki April 21, 2021---></h2>
 <ul class="task-list">
-<li><input type="checkbox"><strong>Problem:</strong> Blood Type</li>
+<li><label><input type="checkbox"><strong>Problem:</strong> Blood Type</label></li>
 </ul>
 <p>The probability that a randomly chosen North American has a particular ABO blood type and Rh factor is given below.</p>
 <p><em>Source: “The Analysis of Biological Data” by Whitlock and Schluter, 3rd Edition, page 125.</em></p>
-<table class="table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th>Blood Type</th>
@@ -241,10 +277,10 @@ Possible Solution
 </ul>
 <!--- From my 221 Wiki April 21, 2021--->
 <ul class="task-list">
-<li><input type="checkbox"><strong>Problem:</strong> 3 Coin Flips</li>
+<li><label><input type="checkbox"><strong>Problem:</strong> 3 Coin Flips</label></li>
 </ul>
 <p>If you flip a fair coin 3 times you could get either 0, 1, 2, or 3 heads with the following probabilities.</p>
-<table class="table">
+<table class="caption-top table">
 <thead>
 <tr class="header">
 <th>0 Heads</th>
@@ -286,7 +322,7 @@ Possible Solution
 <section id="mean-and-median" class="level2">
 <h2 class="anchored" data-anchor-id="mean-and-median">Mean and Median</h2>
 <ul>
-<li><p><input type="checkbox"><strong>Problem:</strong> Comparing Mean and Median</p></li>
+<li><p><label><input type="checkbox"><strong>Problem:</strong> Comparing Mean and Median</label></p></li>
 <li><p>Consider the following data set 6, 58, 100.</p>
 <ul>
 <li><p>Calculate the mean.</p>
@@ -397,7 +433,7 @@ Possible Solution
 <section id="percentile-with-distribution" class="level2">
 <h2 class="anchored" data-anchor-id="percentile-with-distribution">Percentile with Distribution</h2>
 <ul class="task-list">
-<li><input type="checkbox"><strong>Problem:</strong> Pregnancy 80th Percentile</li>
+<li><label><input type="checkbox"><strong>Problem:</strong> Pregnancy 80th Percentile</label></li>
 </ul>
 <p>The length of human pregnancies from conception to birth is normally distributed with mean 266 days and a standard deviation of 16 days. Find the 80th percentile.</p>
 <details>
@@ -422,7 +458,7 @@ Possible Solution
 <!--- Adapted from my 221 Wiki April 30, 2021 (Ben's exercises) --->
 <!--- comment Winter 2023 Computation Practice #4 --->
 <ul class="task-list">
-<li><p><input type="checkbox"><strong>Problem:</strong> Pregnancy 90th Percentile</p>
+<li><p><label><input type="checkbox"><strong>Problem:</strong> Pregnancy 90th Percentile</label></p>
 <p>Week 4, Problem Set 1</p></li>
 </ul>
 <p>The length of human pregnancies from conception to birth is normally distributed with mean 266 days and a standard deviation of 16 days. Find the 90th percentile.</p>
@@ -448,7 +484,7 @@ Possible Solution
 </details>
 <!--- Adpated from the 80th percentile problem above. --->
 <ul class="task-list">
-<li><p><input type="checkbox"><strong>Problem:</strong> Pregnancy 20th Percentile</p>
+<li><p><label><input type="checkbox"><strong>Problem:</strong> Pregnancy 20th Percentile</label></p>
 <p>Week 3, Problem Set 1</p></li>
 </ul>
 <p>The length of human pregnancies from conception to birth is normally distributed with mean 266 days and a standard deviation of 16 days. Find the 20th percentile.</p>
@@ -474,7 +510,7 @@ Possible Solution
 </details>
 <!--- Adpated from the 80th percentile problem above. --->
 <ul class="task-list">
-<li><input type="checkbox"><strong>Problem:</strong> Pregnancy 25th Percentile</li>
+<li><label><input type="checkbox"><strong>Problem:</strong> Pregnancy 25th Percentile</label></li>
 </ul>
 <p>The length of human pregnancies from conception to birth is normally distributed with mean 266 days and a standard deviation of 16 days. Find the 25th percentile.</p>
 <details>
@@ -500,7 +536,7 @@ Possible Solution
 </details>
 <!--- Adpated from the 80th percentile problem above. --->
 <ul class="task-list">
-<li><input type="checkbox"><strong>Problem:</strong> Pregnancy 50th Percentile</li>
+<li><label><input type="checkbox"><strong>Problem:</strong> Pregnancy 50th Percentile</label></li>
 </ul>
 <p>The length of human pregnancies from conception to birth is normally distributed with mean 266 days and a standard deviation of 16 days. Find the 25th percentile.</p>
 <details>
@@ -529,7 +565,7 @@ Possible Solution
 <section id="percentile-with-data" class="level2">
 <h2 class="anchored" data-anchor-id="percentile-with-data">Percentile with Data</h2>
 <ul class="task-list">
-<li><input type="checkbox"><strong>Problem:</strong> Sugar Sack Weights 80th percentile</li>
+<li><label><input type="checkbox"><strong>Problem:</strong> Sugar Sack Weights 80th percentile</label></li>
 </ul>
 <p>Use the <a href="https://tinyurl.com/M221-dist-shapes">data from tinyurl.com/M221-dist-shapes</a> to calculate the 80th percentile of sugar sack weights.</p>
 <details>
@@ -542,7 +578,7 @@ Possible Solution
 <!--- Adapted from 221 Course Packet Lesson 4 exercises--->
 <!--- Winter 2023 Computation Practice #5--->
 <ul class="task-list">
-<li><p><input type="checkbox"><strong>Problem:</strong> Wait Times 40th percentile</p>
+<li><p><label><input type="checkbox"><strong>Problem:</strong> Wait Times 40th percentile</label></p>
 <p>Week 3, Problem Set 1</p></li>
 </ul>
 <p>Use the <a href="https://tinyurl.com/M221-dist-shapes">data from tinyurl.com/M221-dist-shapes</a> to calculate the 40th percentile of wait times.</p>
@@ -555,7 +591,7 @@ Possible Solution
 </details>
 <!--- Adpated from the Sugar Sack weights problem above. --->
 <ul class="task-list">
-<li><p><input type="checkbox"><strong>Problem:</strong> Test Scores 95 percentile</p>
+<li><p><label><input type="checkbox"><strong>Problem:</strong> Test Scores 95 percentile</label></p>
 <p>Week 5, Problem Set 2</p></li>
 </ul>
 <p>Use the data from <strong>tinyurl.com/M221-dist-shapes</strong> to calculate the 95th percentile of test scores.</p>
@@ -575,7 +611,7 @@ Possible Solution
 <h2 class="anchored" data-anchor-id="approximate-rule-for-bell-shaped-distributions">Approximate Rule for Bell Shaped Distributions</h2>
 <p>Assign Problem 1-3 on the day of Lesson 5. I think the students should have enough information after the reading to help each other reason through these exercises.</p>
 <ul>
-<li><p><input type="checkbox"><strong>Problem:</strong> 68-95-99.7 Rule Problem 1</p></li>
+<li><p><label><input type="checkbox"><strong>Problem:</strong> 68-95-99.7 Rule Problem 1</label></p></li>
 <li><p>Use the 68-95-99.7 rule to calculate the approximate area from <span class="math inline">\(z = -1\)</span> to <span class="math inline">\(z=0\)</span>. <em>Remember the normal distribution is symmetric.</em></p>
 <details>
 <summary>
@@ -619,7 +655,7 @@ Possible Solution
 </ul>
 <!-- -->
 <ul>
-<li><p><input type="checkbox"><strong>Problem:</strong> 68-95-99.7 Rule Problem 2</p></li>
+<li><p><label><input type="checkbox"><strong>Problem:</strong> 68-95-99.7 Rule Problem 2</label></p></li>
 <li><p>Use the 68-95-99.7 rule to calculate the approximate area from <span class="math inline">\(z = -2\)</span> to <span class="math inline">\(z=0\)</span>.</p>
 <details>
 <summary>
@@ -663,7 +699,7 @@ Possible Solution
 </ul>
 <!-- -->
 <ul>
-<li><p><input type="checkbox"><strong>Problem:</strong> 68-95-99.7 Rule Problem 3</p></li>
+<li><p><label><input type="checkbox"><strong>Problem:</strong> 68-95-99.7 Rule Problem 3</label></p></li>
 <li><p>Use the 68-95-99.7 rule to calculate the approximate area from <span class="math inline">\(z = -3\)</span> to <span class="math inline">\(z=0\)</span>.</p>
 <details>
 <summary>
@@ -707,7 +743,7 @@ Possible Solution
 </ul>
 <!-- -->
 <ul class="task-list">
-<li><input type="checkbox"><strong>Problem:</strong> 68-95-99.7 Rule Problem 4</li>
+<li><label><input type="checkbox"><strong>Problem:</strong> 68-95-99.7 Rule Problem 4</label></li>
 </ul>
 <ul>
 <li><p>Use the 68-95-99.7 rule to calculate the approximate area less than <span class="math inline">\(z = -2\)</span>. Remember to draw pictures as part of your solution.</p>
@@ -751,7 +787,7 @@ Possible Solution
 </ul>
 <!--- Winter 2023 Computation Practice #6--->
 <ul class="task-list">
-<li><p><input type="checkbox"><strong>Problem:</strong> 68-95-99.7 Rule Problem 5</p>
+<li><p><label><input type="checkbox"><strong>Problem:</strong> 68-95-99.7 Rule Problem 5</label></p>
 <p>Week 3, Problem Set 1</p></li>
 </ul>
 <p>Use the 68-95-99.7 rule to calculate the approximate area between <span class="math inline">\(z = 2\)</span> and <span class="math inline">\(z = 3\)</span>. Remember to draw pictures.</p>
@@ -779,7 +815,7 @@ Possible Solution
 <section id="probability-calculations-with-normal-distribution" class="level2">
 <h2 class="anchored" data-anchor-id="probability-calculations-with-normal-distribution">Probability Calculations with Normal Distribution</h2>
 <ul class="task-list">
-<li><input type="checkbox"><strong>Problem:</strong> Pregnancy</li>
+<li><label><input type="checkbox"><strong>Problem:</strong> Pregnancy</label></li>
 </ul>
 <p>The length of human pregnancies from conception to birth is normally distributed with mean 266 days and a standard deviation of 16 days.</p>
 <ul>
@@ -842,7 +878,7 @@ Possible Solution
 <!--- Adapted from my 221 Wiki April 30, 2021 (Ben's exercises) --->
 <!--- Winter 2023 Computation Practice #7 --->
 <ul class="task-list">
-<li><input type="checkbox"><strong>Problem:</strong> LSAT</li>
+<li><label><input type="checkbox"><strong>Problem:</strong> LSAT</label></li>
 </ul>
 <p>The Law School Admission Test (LSAT) is required for admission to many law schools. The scores on the LSAT are approximately normal with mean of 150 and standard deviation of 9. Queen’s School of Business in Kingston, Ontario requires a minimum LSAT score of 157 for admission. What is the probability that a randomly selected student will score below 157?</p>
 <details>
@@ -877,7 +913,7 @@ Possible Solution
 <section id="variable-x" class="level3">
 <h3 class="anchored" data-anchor-id="variable-x">Variable <span class="math inline">\(X\)</span></h3>
 <ul class="task-list">
-<li><input type="checkbox"><strong>Problem:</strong> GRE</li>
+<li><label><input type="checkbox"><strong>Problem:</strong> GRE</label></li>
 </ul>
 <p>Scores on the quantitative portion of the GRE are approximately normal distributed with mean <span class="math inline">\(\mu = 150.8\)</span> and a standard deviation of <span class="math inline">\(\sigma = 8.8\)</span>. Dianne earned a score of 155 on the quantitative portion of the GRE. What is the <span class="math inline">\(z\)</span>-score corresponding to Dianne’s score?</p>
 <details>
@@ -896,7 +932,7 @@ Possible Solution
 <section id="variable-overlinex" class="level3">
 <h3 class="anchored" data-anchor-id="variable-overlinex">Variable <span class="math inline">\(\overline{X}\)</span></h3>
 <ul class="task-list">
-<li><p><input type="checkbox"><strong>Problem:</strong> Date Money</p>
+<li><p><label><input type="checkbox"><strong>Problem:</strong> Date Money</label></p>
 <p>Week 5, Problem Set 2</p></li>
 </ul>
 <p>Assume that the amount of money BYU-Idaho students spend on a date is right-skewed with a mean of $16 and a standard deviation of $20. What is the <span class="math inline">\(z\)</span>-score corresponding to a random sample of 45 BYU-Idaho students with a mean of $10 spent on their last date?</p>
@@ -920,7 +956,7 @@ Possible Solution
 <section id="variable-x-1" class="level3">
 <h3 class="anchored" data-anchor-id="variable-x-1">Variable <span class="math inline">\(X\)</span></h3>
 <ul class="task-list">
-<li><p><input type="checkbox"><strong>Problem:</strong> Reading Speed</p>
+<li><p><label><input type="checkbox"><strong>Problem:</strong> Reading Speed</label></p>
 <p>Week 3, Problem Set 1</p></li>
 </ul>
 <p>The reading speed of second grade students is approximately normal, with a mean of 90 words per minute (wpm) and a standard deviation of 10 wpm (Sullivan, pp.&nbsp;439). What is the probability a randomly selected student will read more than 95 words per minute?</p>
@@ -947,7 +983,7 @@ Possible Solution
 <section id="variable-overlinex-1" class="level3">
 <h3 class="anchored" data-anchor-id="variable-overlinex-1">Variable <span class="math inline">\(\overline{X}\)</span></h3>
 <ul class="task-list">
-<li><input type="checkbox"><strong>Problem:</strong> GPA 1</li>
+<li><label><input type="checkbox"><strong>Problem:</strong> GPA 1</label></li>
 </ul>
 <p>Suppose the mean GPA of BYU-Idaho students is 3.5 and the standard deviation is 0.7. It is well known that this distribution is left-skewed. What is the probability that a random sample of 70 students will have a mean GPA less than 3.6?</p>
 <details>
@@ -971,7 +1007,7 @@ Possible Solution
 <!--- Adapted from Lesson 7 Prep Quiz --->
 <!--- Winter 2023 Computation Practice #13 --->
 <ul class="task-list">
-<li><input type="checkbox"><strong>Problem:</strong> GPA</li>
+<li><label><input type="checkbox"><strong>Problem:</strong> GPA</label></li>
 </ul>
 <p>Calculate the probability, if possible. If it is not possible to compute the probability explain why not.</p>
 <p>Suppose the mean GPA of BYU-Idaho students is 3.5 and the standard deviation is 0.7. It is well known that this distribution is left-skewed. What is the probability that a random sample of 17 students will have a mean GPA less than 3.2?</p>
@@ -984,7 +1020,7 @@ Possible Solution
 <!--- Adapted from Lesson 7 Prep Quiz --->
 <!--- Adapted from Winter 2023 Computation Practice #14a --->
 <ul class="task-list">
-<li><p><input type="checkbox"><strong>Problem:</strong> Reading Speed (Take 2)</p>
+<li><p><label><input type="checkbox"><strong>Problem:</strong> Reading Speed (Take 2)</label></p>
 <p>Week 3, Problem Set 1</p></li>
 </ul>
 <p>Calculate the probability, if possible. If it is not possible to compute the probability explain why not.</p>
@@ -1010,7 +1046,7 @@ Possible Solution
 <!--- Adapted from my 221 Wiki May 7, 2021 --->
 <!--- Winter 2023 Computation Practice #14b --->
 <ul class="task-list">
-<li><p><input type="checkbox"><strong>Problem:</strong> Generic Sampling Distribution</p>
+<li><p><label><input type="checkbox"><strong>Problem:</strong> Generic Sampling Distribution</label></p>
 <p>Calculate the probability, if possible. If it is not possible to compute the probability explain why not.</p>
 <p>Given data that are right-skewed, <span class="math inline">\(\mu = 5\)</span>, and <span class="math inline">\(\sigma = 2\)</span>. What is the probability a random sample of 12 will have a mean greater than 10?</p>
 <details>
@@ -1021,7 +1057,7 @@ Possible Solution
 </details>
 <!--- Adapted from 221 Course Packet Lesson 7 #5 (Craig's exercises) --->
 <!--- Winter 2023 Computation Practice #14c ---></li>
-<li><p><input type="checkbox"><strong>Problem:</strong> TV (Probability)</p>
+<li><p><label><input type="checkbox"><strong>Problem:</strong> TV (Probability)</label></p>
 <p>Week 4, Set 1</p></li>
 </ul>
 <p>The amount of time Americans spend watching television is closely monitored by A.C. Nielsen because this helps to determine advertising pricing for commercials. It is known the distribution of time Americans watch television is right skewed, with a mean of 2.35 hours per day and a standard deviation of 1.93 (Sullivan, pp.&nbsp;440). What is the probability that a random sample of 70 Americans has a mean TV viewing time greater than 1 hour per day?</p>
@@ -1053,7 +1089,7 @@ Possible Solution
 <section id="after-lesson-9" class="level1">
 <h1>After Lesson 9</h1>
 <ul class="task-list">
-<li><p><input type="checkbox"><strong>Problem:</strong> PH Probability and Hypothesis Test</p>
+<li><p><label><input type="checkbox"><strong>Problem:</strong> PH Probability and Hypothesis Test</label></p>
 <p>Week 4, Set 2</p></li>
 </ul>
 <p>In a manufacturing facility, the pH of a solution must be carefully monitored. Historically, the pH values have been normally distributed with mean 3.25 and standard deviation 0.08. Find the probability that on the next test the pH of the solution will be less than 3.32.</p>
@@ -1126,7 +1162,7 @@ Possible Solution
 <section id="sample-size-calculations" class="level2">
 <h2 class="anchored" data-anchor-id="sample-size-calculations">Sample Size Calculations</h2>
 <ul class="task-list">
-<li><p><input type="checkbox"><strong>Problem:</strong> Blinks</p>
+<li><p><label><input type="checkbox"><strong>Problem:</strong> Blinks</label></p>
 <p>Suppose you are scientist and you want to use a confidence interval to estimate the true mean number of times a person in your city blinks each day. Find the sample size required to construct a 90% confidence interval with a margin of error 43 blinks for the true mean number of time a person blinks each day. Assume the standard deviation of blinks per day is 1240.</p>
 <details>
 <summary>
@@ -1151,7 +1187,7 @@ Possible Solution
 <section id="variable-hatp" class="level3">
 <h3 class="anchored" data-anchor-id="variable-hatp">Variable <span class="math inline">\(\hat{P}\)</span></h3>
 <ul class="task-list">
-<li><p><input type="checkbox"><strong>Problem:</strong> Soccer</p>
+<li><p><label><input type="checkbox"><strong>Problem:</strong> Soccer</label></p>
 <p>John is a soccer player. He knows that he scores a goal 60% of the time. What is the <span class="math inline">\(z\)</span>-score corresponding to John scoring 51 of 78 attempted goals?</p>
 <details>
 <summary>
@@ -1174,7 +1210,7 @@ Possible Solution
 <section id="variable-hatp-1" class="level3">
 <h3 class="anchored" data-anchor-id="variable-hatp-1">Variable <span class="math inline">\(\hat{P}\)</span></h3>
 <ul class="task-list">
-<li><p><input type="checkbox"><strong>Problem:</strong> Phishing Emails</p>
+<li><p><label><input type="checkbox"><strong>Problem:</strong> Phishing Emails</label></p>
 <p>First Data Corp.&nbsp;records indicate that in 2005, 43% of adult email users received a phishing email. A phishing email replicates an authentic site for the purpose of stealing personal information such as account numbers and passwords. Suppose a random sample of 400 adults will be surveyed on whether they have received phishing emails to determine recent trends. What is the probability that more than 38% of those in such a survey would have received a phishing email?</p>
 <details>
 <summary>
@@ -1201,7 +1237,7 @@ Possible Solution
 </ul>
 <!-- -->
 <ul class="task-list">
-<li><p><input type="checkbox"><strong>Problem:</strong> Stock Market</p>
+<li><p><label><input type="checkbox"><strong>Problem:</strong> Stock Market</label></p>
 <p>You take a simple random sample of 200 adults from a town in the Western United States to determine the proportion of those in town who invest in the stock market. Assume the unknown population proportion or percentage of people in town who invest in the stock market is (or 30%). What is the probability that more than 25% of those in such a survey would have invested in the stock market?</p>
 <details>
 <summary>
@@ -1225,7 +1261,7 @@ Possible Solution
 </details>
 <!--- Adapted from Practice Exam 3; numbers and wording changed slightly --->
 <!--- Winter 2023 Computation Practice #11 ---></li>
-<li><p><input type="checkbox"><strong>Problem:</strong> Smoking Teens</p>
+<li><p><label><input type="checkbox"><strong>Problem:</strong> Smoking Teens</label></p>
 <p>Calculate the probability, if possible. If it is not possible to compute the probability explain why not.</p>
 <p>A study was conducted to determine the proportion of American teenagers who smoke. Previous surveys showed that 15% percent of teenagers smoke. A Gallup survey interviewed a nationally representative sample of 785 teenagers. What is the probability less than 97 teenagers in the survey smoke?</p>
 <details>
@@ -1254,7 +1290,7 @@ Possible Solution
 </details>
 <!--- Adapted from Lesson 17 Hmk Quiz --->
 <!--- Revised from Winter 2023 Computation Practice #14d ---></li>
-<li><p><input type="checkbox"><strong>Problem:</strong> COVID</p>
+<li><p><label><input type="checkbox"><strong>Problem:</strong> COVID</label></p>
 <p>Calculate the probability, if possible. If it is not possible to compute the probability explain why not.</p>
 <p>Data from the Centers for Disease Control and Prevention shows that among the people in the United States who are fully vaccinated, the probability of getting COVID is very, very small: only 0.0001. Suppose you plan to survey 50,000 people (<span class="math inline">\(n=50000\)</span>) who are fully vaccinated to see if they contracted COVID after getting the vaccine. What is the probability that less than 10 of the fully vaccinated people you survey contracted COVID after getting the vaccine?</p>
 <details>
@@ -1274,7 +1310,7 @@ Possible Solution
 <section id="sample-size" class="level2">
 <h2 class="anchored" data-anchor-id="sample-size">Sample Size</h2>
 <ul class="task-list">
-<li><p><input type="checkbox"><strong>Problem:</strong> Generic Sampling Distribution Check</p>
+<li><p><label><input type="checkbox"><strong>Problem:</strong> Generic Sampling Distribution Check</label></p>
 <p>Given the true proportion is <span class="math inline">\(p = 0.1\)</span>. What is the smallest value of <span class="math inline">\(n\)</span> that satisfies the requirements for the random variable <span class="math inline">\(\hat{p}\)</span> to be normally distributed?</p>
 <details>
 <summary>
@@ -1295,7 +1331,7 @@ Possible Solution
 <section id="sample-size-1" class="level2">
 <h2 class="anchored" data-anchor-id="sample-size-1">Sample Size</h2>
 <ul class="task-list">
-<li><p><input type="checkbox"><strong>Problem:</strong> Doctors</p>
+<li><p><label><input type="checkbox"><strong>Problem:</strong> Doctors</label></p>
 <p>A survey of doctors is planned to see what percentage prescribe a certain medication. Find the sample size required to achieve a 5% margin of error if the confidence level is 90%.</p>
 <details>
 <summary>
@@ -1308,7 +1344,7 @@ Possible Solution
 </details>
 <!--- Adapted from Lesson 17 Hmk Quiz--->
 <!--- Winter 2023 Computation Practice #17 ---></li>
-<li><p><input type="checkbox"><strong>Problem:</strong> Dow Jones Industrial Average</p>
+<li><p><label><input type="checkbox"><strong>Problem:</strong> Dow Jones Industrial Average</label></p>
 <p>A recent book noted that only 20% of all investment managers outperform the Dow Jones Industrial Average over a five-year period. Suppose you are in charge of designing the study. What sample size would be needed to construct a 98% confidence interval with a margin of error 3%.</p>
 <details>
 <summary>
@@ -1411,10 +1447,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1424,8 +1477,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1437,7 +1499,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1481,6 +1666,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1506,6 +1692,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1566,6 +1778,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 

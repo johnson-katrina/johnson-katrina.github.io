@@ -22,16 +22,17 @@ format:
 
 # My Favorite Resources
 
--   Current Courses (Winter 2024)
+-   Current Courses (Fall 2024)
 
-    -   [Math 119](https://byui.instructure.com/courses/271180)
+    - [Math 119](https://byui.instructure.com/courses/304304)
+    
+    - [Math 301](https://byui.instructure.com/courses/304452)
 
-    -   [Math 112](https://byui.instructure.com/courses/271146)
+- Class Notes
+    - [301 Wiki](https://byuimath.com/johnsonkat/all/301/index.php?n=Main.HomePage)
+<!--        - Ben's 301 Wiki -->
 
-    -   [Math 221A](https://byui.instructure.com/courses/271338)
-
--   Class Notes
-
+<!--
     -   [112 Wiki](https://byuimath.com/johnsonkat/all/112/index.php?n=Schedule.Schedule)
 
     -   [119 Wiki](https://byuimath.com/johnsonkat/all/119/index.php?n=Schedule.Schedule)
@@ -41,12 +42,9 @@ format:
     -   [221 "Daily" Computation Practice](221BrainGains.html)
 
         -   [221 Wiki](https://byuimath.com/johnsonkat/all/221/index.php?n=Schedule.Schedule)
+-->
 
-    -   [301 Wiki](https://byuimath.com/johnsonkat/all/301/index.php?n=Main.HomePage)
-
-        -   Ben's 301 Wiki
-
--   Statistics
+- Statistics
 
     -   [BYU-Idaho's Normal Probability Applet](https://byuimath.com/apps/normprob.html)
 
