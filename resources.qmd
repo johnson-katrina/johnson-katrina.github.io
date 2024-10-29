@@ -26,7 +26,7 @@ format:
 
     - [Math 119](https://byui.instructure.com/courses/304304)
     
-    - [Math 301](https://byui.instructure.com/courses/304452)
+    - [*Math 301*](https://byui.instructure.com/courses/304452)
 
 - Class Notes
     - [301 Wiki](https://byuimath.com/johnsonkat/all/301/index.php?n=Main.HomePage)
