@@ -24,7 +24,7 @@ format:
 
 -   Current Courses (Fall 2024)
 
-    - [Math 119](https://byui.instructure.com/courses/304304)
+    - [*Math 119*](https://byui.instructure.com/courses/304304)
     
     - [*Math 301*](https://byui.instructure.com/courses/304452)
 
