@@ -4,8 +4,6 @@ title: "Week 1 Computation Practice"
 
 ------------------------------------------------------------------------
 
-Test
-
 <details>
 
 <summary>Problem Set 1</summary>
