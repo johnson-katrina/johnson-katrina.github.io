@@ -1,0 +1,177 @@
+---
+title: "Project 1 Instructions"
+# date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:
+  # prettydoc::html_pretty:
+  #   theme: cayman
+    code_folding: show
+    theme: flatly
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+##  {.tabset .tabset-pills}
+
+### **Math 119 Projects**
+
+You have the opportunity to complete up to three projects this semester during your applied practice (or project work). When we fit a model to data we encode information from the data into the model by selecting specific values for the parameters of the model. A fitted model includes information from the data in the selected parameter values. We used fitted models to answer questions based on data. If you watch for it you will see the following pattern in all our project work.
+
+-   Step 1: Explore the data,
+-   Step 2: Explore the general models,
+-   Step 3: Fit the selected general models to the data (by selecting parameter values), and
+-   Step 4: Use the fitted model(s) to answer questions.
+
+One of the key assumptions we make in the process of fitting models to data is selecting the general models we will fit to the data. Notice as you complete your project work that the choice we make to use a certain general model directly impacts the answer(s) we get from the data. It is important to keep this idea in mind when working with models and data. And we must be transparent about our assumptions (include the general model we select) when sharing our work with others.
+
+<!-- END OF SECTION -->
+
+## **What's a cohesive analysis?**
+
+> <a id="cohesive_analysis"></a> You'll see the instructions "Organize your work into a **cohesive analysis**" at the end of every task. Imagine that you are submitting a report to a supervisor. Your work needs to be readable. Your job is to present an analysis of the task at hand for your supervisor. Refer to the [**detailed Project Standards**](https://byuistats.github.io/M119/specs_detail.html) for additional guidance.
+
+<!-- END OF SECTION -->
+
+##  {.tabset .tabset-pills}
+
+### **Introduction to Project 1**
+
+This project outline and background information will assist you as you complete your project. You should assume the reader of your work has no knowledge or access to this information, which means you'll need to incorporate portions of this introduction into your work, as they seem relevant.
+
+How long does an LED light bulb last? Lumens are a measure of how much light you get from a bulb. When you first turn on an LED bulb, the lumen output slightly increases for a while, going above the initial brightness. While LEDs do not "burn out", after peaking the lumen output stays relatively constant before it starts to decrease. Put simply, LED light bulbs first increase in intensity and then decrease in intensity. One measure we will use for the suitability of a general model is whether it is capable of this type of increasing and then decreasing behavior.
+
+In the bulb data we will use, lumen measures are normalized to the initial intensity of the bulb, so that we can compare different bulbs. This feature of our data requires that we match the initial output to 100 when fitting our models.
+
+In 2008, the US Department of Energy launched the Bright Tomorrow Lighting Prize (or L Prize) to encourage the development of high-efficiency replacement for the incandescent light bulb. To win the prize the bulb needed a lifetime longer than 25,000 hours (almost 3 years). [Source](https://en.wikipedia.org/wiki/L_Prize)
+
+We have less than one year of data on our bulbs, but we can use mathematical models to predict bulb lifetimes. Our work in this project relies on assumed mathematical models (the general models selected to fit to the data). We will
+
+1.  use R to plot provided data,
+2.  explore how parameters change the behavior of several functions (the general models),
+3.  visually fit these general models to data, and
+4.  use the fitted models to provide information about how long an LED bulb lasts.
+
+In this project, we'll be fitting the data to deterministic models, functions $f(t)$, that give the lumen output of LED bulbs (as a percent of the initial lumens) after $t$ hours. The input of each model is time, $t$, measured in hours since the bulb is turn on. The output of each model is bulb intensity, $f(t)$, measured as a percent of initial bulb intensity. By choosing to normalize bulb intensity in this way, we have fixed the initial output as 100% of the original intensity, which means $f(0) = 100$. The domain of each model is a subset of $t \geq 0$.
+
+For this project, we will use 80% of the initial intensity[^1] as the threshold for determining the lifetime of an LED light bulb. This means that once the bulb intensity decreases below 80%, we will consider this the life of the bulb (in other words the bulb "burned out").
+
+[^1]: This number is a simplified story for illustrative purposes only.
+
+### Task 1: Data
+
+*In this task we familiarize ourselves with the data we will be using in Project 1 (and Project 2).*
+
+-   Look up your seed on Canvas.
+
+-   Create an R Markdown file. <br/>*(Or download and edit the Rmd Template for this task.)*
+
+-   Use the `led_bulb()` function to store data for a single bulb in the variable `bulb`, using your assigned seed from Canvas.
+
+    -   You will need to install the `devtools` and `byuidatascience/data4led` packages. The code below can help you accomplish this.
+
+    ```{r eval=FALSE}
+    #Uncomment and run the line below once in the console to get the devtools package.
+      #install.packages("devtools")
+
+    #Uncomment and run the line below once in the console to get the data4led package.
+      #devtools::install_github("byuidatascience/data4led") 
+
+    #Use the code below to load the data4led package to your current R session.
+    library(data4led)
+
+    #After entering the seed from the class list of seeds, use the code below to load the data for one randomly selected bulb. 
+    bulb <- led_bulb(1,seed = DDDD)
+    #Setting the seed fixes which randomly selected bulb you will use.
+    #This makes your work reproducible.
+    ```
+
+    This code creates a data frame called "bulb". The bulb data frame contains measurements for one randomly selected bulb at many time points. You will need to set the seed so that you will have your own random, but reproducible, data with which to work. Please set the seed as the four digit number from the class list of assigned seeds.
+
+    -   Use `head(bulb)` to view the first 6 lines of the `bulb` data frame you created. *You do not need to include the head of the bulb data set in your cohesive analysis.* Verify that this data frame, a table, includes the columns
+        1.  "id", the identification number for your randomly selected bulb,
+        2.  "hours", the number of hours since the bulb has turned on,
+        3.  "intensity", the lumen output of the bulb,
+        4.  "normalized_intensity", the lumen at that time divided by the lumen of your bulb at time 0, and
+        5.  "percent_intensity", the bulb intenstity as a percent of the original lumen (notice the first row in this column is 100).
+
+-   Use the `plot()` command in R, along with the `bulb` data frame, to create a time vs. bulb intensity (as a percent of the original lumens) scatter plot for the one light bulb corresponding to your seed. Make sure `hours` is on the horizontal axis ($x$-axis) and `percent_intensity` is on the vertical axis ($y$-axis).
+
+    -   **CHECK YOUR WORK:** Do you get a plot with 44 points? Is the horizontal axis from 0 to about 5000? Is the point $(0,100)$ on your plot?
+    -   **CHECK YOUR WORK:** Use this [Shiny App](https://shiny.byui.edu/content/6b2eeece-fca9-4e59-92fd-62e3ab3c2782) to check your work.
+
+-   Organize your work into a [**cohesive analysis**](https://byuistats.github.io/M119/specs_detail.html) and submit the html file on Canvas.
+
+<!-- END OF SECTION -->
+
+### Task 2: Models
+
+*In this task we familiarize ourselves with the general models we will be fitting during Project 1 Task 3. We use dynamic figure in Desmos to learn what behaviors each general model is capable of. This exploration of the general models is called a parameter exploration, since we are exploring how changing the value of each parameter influences the behavior of the function. The more we understand about the behavior of each general model the better we will be able to control that behavior and select specific parameter values to visually fit these models to our data in the next task (Project 1 Task 3).*
+
+-   Create a new R Markdown file. <br/>*(Or download and edit the Rmd Template for this task.)*
+
+-   Consider the following six general models.
+
+    -   $f_0(x; a_0) = a_0$ where $x \geq 0$
+    -   $f_1(x; a_0,a_1) = a_0 + a_1x$ where $x \geq 0$
+    -   $f_2(x; a_0,a_1,a_2) = a_0 + a_1x + a_2x^2$ where $x \geq 0$
+    -   $f_3(x; a_0,a_1,a_2 ) = a_0 + a_1e^{-a_2x}$ where $x \geq 0$
+    -   $f_4(x; a_0,a_1,a_2) = a_0 + a_1x + a_2\ln(0.005x+1)$ where $x \geq 0$
+    -   $f_5(x; a_0,a_1,a_2) = (a_0+a_1x)e^{-a_2x}$ where $x \geq 0$
+
+    ```{=html}
+    <!--  Notice that $f_0$ and $f_1$ could be considered submodels of $f_2$. What do we mean by submodel? Consider the model $f_2$ with $a_1 = 0$ and $a_2 = 0$ this is $f_0$. Similarly, the model $f_2$ with $a_2 = 0$ is $f_1$. Is is also true that $f_0$ could be called a submodel of $f_1$ with $a_1 = 0$.
+    -->
+    ```
+    For each function, use the sliders in the Desmos files below to dynamically explore how changing the parameter changes the behavior of the function.
+
+    -   [Desmos file for function 0](https://www.desmos.com/calculator/zild585kv2)
+    -   [Desmos file for function 1](https://www.desmos.com/calculator/xwpdd6tfwa)
+    -   [Desmos file for function 2](https://www.desmos.com/calculator/sfm0h6cq1f)
+    -   [Desmos file for function 3](https://www.desmos.com/calculator/oazbfglkp2)
+    -   [Desmos file for function 4](https://www.desmos.com/calculator/fbdvpb9hdi)
+    -   [Desmos file for function 5](https://www.desmos.com/calculator/xx4kjeclv5)
+
+    *For each function, in your personal notes, observe how changing the parameters changes the behavior of the function (or model). Try to summarize your observations in terms of transformations of functions (shifts, reflections, stretch) and the mathematical behavior of the function (increasing, decreasing, constant, positive, negative, nonnegative). For each function, in your personal notes, identify interesting parameter values (or ranges of values) that highlight different representative behaviors.*
+
+-   From the functions $f_3$, $f_4$, and $f_5$, **pick two** functions to describe.
+
+    -   You only need to include two functions in your cohesive analysis for this task. In your cohesive analysis, summarize your observations about the parameters ($a_0$, $a_1$ and $a_2$) in terms of transformations of functions (shifts, reflections, stretch) and the mathematical behavior of the functions (increasing, decreasing, constant, positive, negative, nonnegative).
+
+    -   For the two functions you selected, use the `plot()` command in R to plot at least two representative curves illustrating what you learned in your parameter exploration. Use the `par(mfrow())` command to organize the two plots into one figure. For example the figure below shows two plots each with a representative curve demonstrating the behavior of the general model $f_2$.
+
+        *The function in the left plot is* $f_2(x) = 80 - 0.03x - 0.00001x^2$ and the function in the right plot is $f_2(x) = 80 + 0.03x + 0.00001x^2$.
+
+        ```{r, class.source = 'fold-hide'}
+        x <- seq(-3000,3000,5)
+
+        f <- function(x,a0=0,a1=0,a2=1){
+          a0 + a1*x + a2*x^2
+        }
+        y1 <- f(x,80,-0.03,-0.00001)
+        y2 <- f(x,80,0.03,0.00001)
+
+
+        par(mfrow=c(1,2),mar=c(5,5,0.5,0.25),oma=c(0,0,2,0))
+        plot(x,y1,ylim=c(0,120),type='l',xlab="x",ylab='f(x)')
+        abline(h=0,lty=3,col='gray')
+        abline(v=0,lty=3,col='gray')
+        plot(x,y2,ylim=c(0,120),type='l',xlab="x",ylab='f(x)')
+        abline(h=0,lty=3,col='gray')
+        abline(v=0,lty=3,col='gray')
+        mtext('figure: representative behaviors',outer=TRUE)
+        ```
+
+    -   **CHECK YOUR WORK:** For each function you selected does your code produce at least 2 plots in the same figure that show curves with different representative behaviors? There is no Shiny App for this Task.
+
+-   Organize your work into a [**cohesive analysis**](https://byuistats.github.io/M119/specs_detail.html) and submit the html file on Canvas.
+
+    -   Remember to clearly specify, in your narrative (not just the code chunks), the parameter values you use in each plot. This is required to make your work is reproducible.
+    -   As needed, review the explanation of a cohesive analysis, found in the Project Standards.
+
+### Task 3: "Visually" Fit
+
+### Task 4: Using Models
+
+### Bring It All Together
